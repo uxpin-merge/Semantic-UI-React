@@ -1,6 +1,37 @@
-export AutoControlledComponent from './AutoControlledComponent'
+import AutoControlledComponent from './AutoControlledComponent'
+import * as childrenUtils from './childrenUtils'
+import * as customPropTypes from './customPropTypes'
+import eventStack from './eventStack'
+import getUnhandledProps from './getUnhandledProps'
+import getElementType from './getElementType'
+import handleRef from './handleRef'
+import isBrowser from './isBrowser'
+import doesNodeContainClick from './doesNodeContainClick'
+import leven from './leven'
+import createPaginationItems from './createPaginationItems'
+import * as SUI from './SUI'
+
+import normalizeOffset from './normalizeOffset'
+import normalizeTransitionDuration from './normalizeTransitionDuration'
+import objectDiff from './objectDiff'
+
+export { numberToWordMap, numberToWord } from './numberToWord'
+export { AutoControlledComponent }
 export { getChildMapping, mergeChildMappings } from './childMapping'
-export * as childrenUtils from './childrenUtils'
+export { childrenUtils }
+export { customPropTypes }
+export { eventStack }
+export { getUnhandledProps }
+export { getElementType }
+export { handleRef }
+export { isBrowser }
+export { doesNodeContainClick }
+export { leven }
+export { createPaginationItems }
+export { SUI }
+export { normalizeOffset }
+export { normalizeTransitionDuration }
+export { objectDiff }
 
 export {
   useKeyOnly,
@@ -12,15 +43,9 @@ export {
   useWidthProp,
 } from './classNameBuilders'
 
-export * as customPropTypes from './customPropTypes'
-
 export { debug, makeDebugger } from './debug'
-export eventStack from './eventStack'
 
 export * from './factories'
-export getUnhandledProps from './getUnhandledProps'
-export getElementType from './getElementType'
-export handleRef from './handleRef'
 
 export {
   htmlInputAttrs,
@@ -29,14 +54,3 @@ export {
   htmlImageProps,
   partitionHTMLProps,
 } from './htmlPropsUtils'
-
-export isBrowser from './isBrowser'
-export doesNodeContainClick from './doesNodeContainClick'
-export leven from './leven'
-export createPaginationItems from './createPaginationItems'
-export * as SUI from './SUI'
-
-export { numberToWordMap, numberToWord } from './numberToWord'
-export normalizeOffset from './normalizeOffset'
-export normalizeTransitionDuration from './normalizeTransitionDuration'
-export objectDiff from './objectDiff'

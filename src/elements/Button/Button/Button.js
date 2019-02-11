@@ -13,12 +13,12 @@ import {
   useKeyOnly,
   useKeyOrValueAndKey,
   useValueAndKey,
-} from '../../lib'
-import Icon from '../Icon/Icon'
-import Label from '../Label/Label'
-import ButtonContent from './ButtonContent'
-import ButtonGroup from './ButtonGroup'
-import ButtonOr from './ButtonOr'
+} from '../../../lib'
+import Icon from '../../Icon/Icon'
+import Label from '../../Label/Label'
+import ButtonContent from '../ButtonContent'
+import ButtonGroup from '../ButtonGroup'
+import ButtonOr from '../ButtonOr'
 
 /**
  * A Button indicates a possible user action.
@@ -189,7 +189,7 @@ class Button extends Component {
     _.invoke(this.props, 'onClick', e, this.props)
   }
 
-  handleRef = c => (this.ref = c)
+  handleRef = (c) => (this.ref = c)
 
   hasIconClass = () => {
     const { labelPosition, children, content, icon } = this.props
@@ -268,7 +268,7 @@ class Button extends Component {
           {labelPosition === 'left' && labelElement}
           <button
             className={buttonClasses}
-            aria-pressed={toggle ? (!!active) : undefined}
+            aria-pressed={toggle ? !!active : undefined}
             disabled={disabled}
             ref={this.handleRef}
             tabIndex={tabIndex}
@@ -288,7 +288,7 @@ class Button extends Component {
       <ElementType
         {...rest}
         className={classes}
-        aria-pressed={toggle ? (!!active) : undefined}
+        aria-pressed={toggle ? !!active : undefined}
         disabled={(disabled && ElementType === 'button') || undefined}
         onClick={this.handleClick}
         ref={this.handleRef}
@@ -303,6 +303,6 @@ class Button extends Component {
   }
 }
 
-Button.create = createShorthandFactory(Button, value => ({ content: value }))
+Button.create = createShorthandFactory(Button, (value) => ({ content: value }))
 
 export default Button

@@ -42,7 +42,8 @@
     "test:watch": "yarn test --no-single-run",
     "tsd:lint": "tslint \"./index.d.ts\" \"./src/**/*.d.ts\" \"./src/**/*.tsx\" \"./test/**/*.d.ts\" \"./test/**/*.tsx\"",
     "tsd:lint:fix": "yarn tsd:lint --fix",
-    "tsd:test": "gulp build:dist:commonjs:tsd && tsc -p ./ && rm test/typings.js"
+    "tsd:test": "gulp build:dist:commonjs:tsd && tsc -p ./ && rm test/typings.js",
+    "uxpin:experiment": "uxpin-merge --webpack-config ./webpack.uxpin.config.js --uxpin-domain merge.uxpin.cloud"
   },
   "lint-staged": {
     "**/*.{js,jsx}": [
@@ -96,6 +97,7 @@
     "@babel/standalone": "^7.1.0",
     "@mdx-js/loader": "^0.15.5",
     "@types/react": "^16.4.14",
+    "@uxpin/merge-cli": "^1.1.0",
     "anchor-js": "^4.1.1",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
