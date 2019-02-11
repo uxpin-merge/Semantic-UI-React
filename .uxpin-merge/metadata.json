@@ -26,7 +26,10 @@
                 "undefined": {
                   "name": "Button",
                   "props": {
-                    "children": "Hello"
+                    "content": "Discover docs",
+                    "href": "https://react.semantic-ui.com",
+                    "icon": "github",
+                    "labelPosition": "left"
                   }
                 }
               },
