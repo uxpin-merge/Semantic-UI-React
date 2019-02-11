@@ -7,5 +7,5 @@ module.exports = {
       },
     ],
   },
-  name: 'Material Design UI',
+  name: 'Semantic UI',
 }
