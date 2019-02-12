@@ -34,7 +34,21 @@ class Icon extends PureComponent {
     className: PropTypes.string,
 
     /** Color of the icon. */
-    color: PropTypes.oneOf(SUI.COLORS),
+    color: PropTypes.oneOf([
+      'red',
+      'orange',
+      'yellow',
+      'olive',
+      'green',
+      'teal',
+      'blue',
+      'violet',
+      'purple',
+      'pink',
+      'brown',
+      'grey',
+      'black',
+    ]),
 
     /** Icons can display a smaller corner icon. */
     corner: PropTypes.oneOfType([
@@ -61,13 +75,13 @@ class Icon extends PureComponent {
     loading: PropTypes.bool,
 
     /** Name of the icon. */
-    name: customPropTypes.suggest(SUI.ALL_ICONS_IN_ALL_CONTEXTS),
+    name: PropTypes.string,
 
     /** Icon can rotated. */
     rotated: PropTypes.oneOf(['clockwise', 'counterclockwise']),
 
     /** Size of the icon. */
-    size: PropTypes.oneOf(_.without(SUI.SIZES, 'medium')),
+    size: PropTypes.oneOf(['mini', 'tiny', 'small', 'large', 'big', 'huge', 'massive']),
 
     /** Icon can have an aria label. */
     'aria-hidden': PropTypes.string,

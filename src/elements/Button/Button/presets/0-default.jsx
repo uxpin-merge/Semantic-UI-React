@@ -2,9 +2,4 @@
 import * as React from 'react'
 import Button from '../Button'
 
-export default (<Button
-  content='Discover docs'
-  href='https://react.semantic-ui.com'
-  icon='github'
-  labelPosition='left'
-/>)
+export default <Button content='Discover docs' href='#' icon='github' labelPosition='left' fluid />

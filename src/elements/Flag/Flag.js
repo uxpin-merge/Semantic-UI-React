@@ -516,7 +516,7 @@ class Flag extends PureComponent {
     className: PropTypes.string,
 
     /** Flag name, can use the two digit country code, the full name, or a common alias. */
-    name: customPropTypes.suggest(names),
+    name: PropTypes.oneOf(names),
   }
 
   static defaultProps = {

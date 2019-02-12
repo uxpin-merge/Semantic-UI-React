@@ -57,7 +57,7 @@ class Input extends Component {
     focus: PropTypes.bool,
 
     /** Optional Icon to display inside the Input. */
-    icon: PropTypes.oneOfType([PropTypes.bool, customPropTypes.itemShorthand]),
+    icon: PropTypes.string,
 
     /** An Icon can appear inside an Input on the left or right. */
     iconPosition: PropTypes.oneOf(['left']),

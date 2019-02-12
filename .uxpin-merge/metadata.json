@@ -7,6 +7,4069 @@
             "examples": []
           },
           "info": {
+            "dirPath": "src/elements/Flag",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "javascript",
+              "path": "src/elements/Flag/Flag.js"
+            },
+            "presets": [
+              {
+                "path": "src/elements/Flag/presets/0-default.jsx"
+              }
+            ]
+          },
+          "name": "Flag",
+          "presets": [
+            {
+              "elements": {
+                "undefined": {
+                  "name": "Flag",
+                  "props": {
+                    "name": "us"
+                  }
+                }
+              },
+              "name": "default"
+            }
+          ],
+          "properties": [
+            {
+              "defaultValue": {
+                "value": "i"
+              },
+              "description": "An element type to render as (string or function).",
+              "isRequired": false,
+              "name": "as",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Additional classes.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Flag name, can use the two digit country code, the full name, or a common alias.",
+              "isRequired": false,
+              "name": "name",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ad"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "andorra"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ae"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "united arab emirates"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "uae"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "af"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "afghanistan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ag"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "antigua"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ai"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "anguilla"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "al"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "albania"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "am"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "armenia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "an"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "netherlands antilles"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ao"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "angola"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ar"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "argentina"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "as"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "american samoa"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "at"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "austria"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "au"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "australia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "aw"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "aruba"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ax"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "aland islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "az"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "azerbaijan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ba"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bosnia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bb"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "barbados"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bd"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bangladesh"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "be"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "belgium"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bf"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "burkina faso"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bulgaria"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bh"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bahrain"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bi"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "burundi"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bj"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "benin"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bermuda"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bn"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "brunei"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bo"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bolivia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "br"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "brazil"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bs"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bahamas"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bt"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bhutan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bv"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bouvet island"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bw"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "botswana"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "by"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "belarus"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "bz"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "belize"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ca"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "canada"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cc"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cocos islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cd"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "congo"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cf"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "central african republic"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "congo brazzaville"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ch"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "switzerland"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ci"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cote divoire"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ck"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cook islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cl"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "chile"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cameroon"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cn"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "china"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "co"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "colombia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "costa rica"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cs"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cu"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cuba"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cv"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cape verde"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cx"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "christmas island"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cy"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cyprus"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cz"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "czech republic"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "de"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "germany"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "dj"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "djibouti"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "dk"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "denmark"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "dm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "dominica"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "do"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "dominican republic"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "dz"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "algeria"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ec"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ecuador"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ee"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "estonia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "eg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "egypt"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "eh"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "western sahara"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "er"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "eritrea"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "es"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "spain"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "et"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ethiopia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "eu"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "european union"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "fi"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "finland"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "fj"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "fiji"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "fk"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "falkland islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "fm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "micronesia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "fo"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "faroe islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "fr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "france"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ga"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gabon"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gb"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "uk"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "united kingdom"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gd"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "grenada"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ge"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "georgia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gf"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "french guiana"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gh"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ghana"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gi"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gibraltar"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gl"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "greenland"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gambia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gn"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "guinea"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gp"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "guadeloupe"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gq"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "equatorial guinea"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "greece"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gs"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sandwich islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gt"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "guatemala"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gu"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "guam"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gw"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "guinea-bissau"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gy"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "guyana"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "hk"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "hong kong"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "hm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "heard island"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "hn"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "honduras"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "hr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "croatia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ht"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "haiti"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "hu"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "hungary"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "id"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "indonesia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ie"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ireland"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "il"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "israel"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "in"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "india"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "io"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "indian ocean territory"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "iq"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "iraq"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ir"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "iran"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "is"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "iceland"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "it"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "italy"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "jm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "jamaica"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "jo"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "jordan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "jp"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "japan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ke"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kenya"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kyrgyzstan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kh"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cambodia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ki"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kiribati"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "km"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "comoros"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kn"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "saint kitts and nevis"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kp"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "north korea"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "south korea"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kw"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kuwait"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ky"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "cayman islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kz"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "kazakhstan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "la"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "laos"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lb"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lebanon"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lc"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "saint lucia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "li"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "liechtenstein"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lk"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sri lanka"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "liberia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ls"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lesotho"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lt"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lithuania"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lu"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "luxembourg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "lv"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "latvia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ly"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "libya"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ma"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "morocco"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mc"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "monaco"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "md"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "moldova"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "me"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "montenegro"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "madagascar"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mh"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "marshall islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mk"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "macedonia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ml"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mali"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "myanmar"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "burma"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mn"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mongolia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mo"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "macau"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mp"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "northern mariana islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mq"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "martinique"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mauritania"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ms"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "montserrat"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mt"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "malta"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mu"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mauritius"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mv"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "maldives"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mw"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "malawi"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mx"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mexico"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "my"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "malaysia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mz"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mozambique"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "na"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "namibia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "nc"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "new caledonia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ne"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "niger"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "nf"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "norfolk island"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ng"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "nigeria"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ni"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "nicaragua"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "nl"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "netherlands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "no"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "norway"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "np"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "nepal"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "nr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "nauru"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "nu"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "niue"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "nz"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "new zealand"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "om"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "oman"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pa"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "panama"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pe"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "peru"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pf"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "french polynesia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "new guinea"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ph"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "philippines"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pk"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pakistan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pl"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "poland"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "saint pierre"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pn"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pitcairn islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "puerto rico"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ps"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "palestine"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pt"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "portugal"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pw"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "palau"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "py"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "paraguay"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "qa"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "qatar"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "re"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "reunion"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ro"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "romania"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "rs"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "serbia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ru"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "russia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "rw"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "rwanda"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sa"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "saudi arabia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sb"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "solomon islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sc"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "seychelles"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gb sct"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "scotland"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sd"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sudan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "se"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sweden"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "singapore"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sh"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "saint helena"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "si"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "slovenia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sj"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "svalbard"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "jan mayen"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sk"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "slovakia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sl"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sierra leone"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "san marino"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sn"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "senegal"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "so"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "somalia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "suriname"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "st"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sao tome"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sv"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "el salvador"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sy"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "syria"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "sz"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "swaziland"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tc"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "caicos islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "td"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "chad"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tf"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "french territories"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "togo"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "th"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "thailand"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tj"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tajikistan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tk"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tokelau"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tl"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "timorleste"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "turkmenistan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tn"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tunisia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "to"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tonga"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tr"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "turkey"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tt"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "trinidad"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tv"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tuvalu"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tw"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "taiwan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tz"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tanzania"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ua"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ukraine"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ug"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "uganda"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "um"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "us minor islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "us"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "america"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "united states"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "uy"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "uruguay"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "uz"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "uzbekistan"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "va"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vatican city"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vc"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "saint vincent"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ve"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "venezuela"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vg"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "british virgin islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vi"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "us virgin islands"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vn"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vietnam"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vu"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vanuatu"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "gb wls"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "wales"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "wf"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "wallis and futuna"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ws"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "samoa"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "ye"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "yemen"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "yt"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mayotte"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "za"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "south africa"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "zm"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "zambia"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "zw"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "zimbabwe"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/elements/Header",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "javascript",
+              "path": "src/elements/Header/Header.js"
+            },
+            "presets": [
+              {
+                "path": "src/elements/Header/presets/0-default.jsx"
+              }
+            ]
+          },
+          "name": "Header",
+          "presets": [
+            {
+              "elements": {
+                "undefined": {
+                  "name": "Header",
+                  "props": {
+                    "as": "h1",
+                    "children": "Header"
+                  }
+                }
+              },
+              "name": "default"
+            }
+          ],
+          "properties": [
+            {
+              "description": "An element type to render as (string or function).",
+              "isRequired": false,
+              "name": "as",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Attach header  to other content, like a segment.",
+              "isRequired": false,
+              "name": "attached",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "boolean",
+                      "structure": {}
+                    },
+                    {
+                      "name": "union",
+                      "structure": {
+                        "elements": [
+                          {
+                            "name": "literal",
+                            "structure": {
+                              "value": "top"
+                            }
+                          },
+                          {
+                            "name": "literal",
+                            "structure": {
+                              "value": "bottom"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Format header to appear inside a content block.",
+              "isRequired": false,
+              "name": "block",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Primary content.",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Additional classes.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Color of the header.",
+              "isRequired": false,
+              "name": "color",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "red"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "orange"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "yellow"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "olive"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "green"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "teal"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "blue"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "violet"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "purple"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pink"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "brown"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "grey"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "black"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Shorthand for primary content.",
+              "isRequired": false,
+              "name": "content",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Show that the header is inactive.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Divide header from the content below it.",
+              "isRequired": false,
+              "name": "dividing",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Header can sit to the left or right of other content.",
+              "isRequired": false,
+              "name": "floated",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "left"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "right"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Add an icon by icon name or pass an Icon.",
+              "isRequired": false,
+              "name": "icon",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Add an image by img src or pass an Image.",
+              "isRequired": false,
+              "name": "image",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Inverts the color of the header for dark backgrounds.",
+              "isRequired": false,
+              "name": "inverted",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Content headings are sized with em and are based on the font-size of their container.",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tiny"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "small"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "medium"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "large"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "huge"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Headers may be formatted to label smaller or de-emphasized content.",
+              "isRequired": false,
+              "name": "sub",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Shorthand for Header.Subheader.",
+              "isRequired": false,
+              "name": "subheader",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Align header content.",
+              "isRequired": false,
+              "name": "textAlign",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "left"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "center"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "right"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "justified"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/elements/Icon",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "javascript",
+              "path": "src/elements/Icon/Icon.js"
+            },
+            "presets": [
+              {
+                "path": "src/elements/Icon/presets/0-default.jsx"
+              }
+            ]
+          },
+          "name": "Icon",
+          "presets": [
+            {
+              "elements": {
+                "undefined": {
+                  "name": "Icon",
+                  "props": {
+                    "name": "users"
+                  }
+                }
+              },
+              "name": "default"
+            }
+          ],
+          "properties": [
+            {
+              "defaultValue": {
+                "value": "i"
+              },
+              "description": "An element type to render as (string or function).",
+              "isRequired": false,
+              "name": "as",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Formatted to appear bordered.",
+              "isRequired": false,
+              "name": "bordered",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Icon can formatted to appear circular.",
+              "isRequired": false,
+              "name": "circular",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Additional classes.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Color of the icon.",
+              "isRequired": false,
+              "name": "color",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "red"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "orange"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "yellow"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "olive"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "green"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "teal"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "blue"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "violet"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "purple"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "pink"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "brown"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "grey"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "black"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Icons can display a smaller corner icon.",
+              "isRequired": false,
+              "name": "corner",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "boolean",
+                      "structure": {}
+                    },
+                    {
+                      "name": "union",
+                      "structure": {
+                        "elements": [
+                          {
+                            "name": "literal",
+                            "structure": {
+                              "value": "top left"
+                            }
+                          },
+                          {
+                            "name": "literal",
+                            "structure": {
+                              "value": "top right"
+                            }
+                          },
+                          {
+                            "name": "literal",
+                            "structure": {
+                              "value": "bottom left"
+                            }
+                          },
+                          {
+                            "name": "literal",
+                            "structure": {
+                              "value": "bottom right"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Show that the icon is inactive.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Fitted, without space to left or right of Icon.",
+              "isRequired": false,
+              "name": "fitted",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Icon can flipped.",
+              "isRequired": false,
+              "name": "flipped",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "horizontally"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "vertically"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Formatted to have its colors inverted for contrast.",
+              "isRequired": false,
+              "name": "inverted",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Icon can be formatted as a link.",
+              "isRequired": false,
+              "name": "link",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Icon can be used as a simple loader.",
+              "isRequired": false,
+              "name": "loading",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Name of the icon.",
+              "isRequired": false,
+              "name": "name",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Icon can rotated.",
+              "isRequired": false,
+              "name": "rotated",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "clockwise"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "counterclockwise"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Size of the icon.",
+              "isRequired": false,
+              "name": "size",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "mini"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "tiny"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "small"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "large"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "big"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "huge"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "massive"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Icon can have an aria label.",
+              "isRequired": false,
+              "name": "aria-hidden",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Icon can have an aria label.",
+              "isRequired": false,
+              "name": "aria-label",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            }
+          ]
+        },
+        {
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/elements/Input",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "javascript",
+              "path": "src/elements/Input/Input.js"
+            },
+            "presets": [
+              {
+                "path": "src/elements/Input/presets/0-default.jsx"
+              }
+            ]
+          },
+          "name": "Input",
+          "presets": [
+            {
+              "elements": {
+                "undefined": {
+                  "name": "Input",
+                  "props": {
+                    "icon": "search",
+                    "placeholder": "Search.."
+                  }
+                }
+              },
+              "name": "default"
+            }
+          ],
+          "properties": [
+            {
+              "description": "An element type to render as (string or function).",
+              "isRequired": false,
+              "name": "as",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "An Input can be formatted to alert the user to an action they may perform.",
+              "isRequired": false,
+              "name": "action",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "boolean",
+                      "structure": {}
+                    },
+                    {
+                      "name": "custom",
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "An action can appear along side an Input on the left or right.",
+              "isRequired": false,
+              "name": "actionPosition",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "left"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Primary content.",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Additional classes.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "An Input field can show that it is disabled.",
+              "isRequired": false,
+              "name": "disabled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "An Input field can show the data contains errors.",
+              "isRequired": false,
+              "name": "error",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Take on the size of its container.",
+              "isRequired": false,
+              "name": "fluid",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "An Input field can show a user is currently interacting with it.",
+              "isRequired": false,
+              "name": "focus",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Optional Icon to display inside the Input.",
+              "isRequired": false,
+              "name": "icon",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "An Icon can appear inside an Input on the left or right.",
+              "isRequired": false,
+              "name": "iconPosition",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "left"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Shorthand for creating the HTML Input.",
+              "isRequired": false,
+              "name": "input",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Format to appear on dark backgrounds.",
+              "isRequired": false,
+              "name": "inverted",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Optional Label to display along side the Input.",
+              "isRequired": false,
+              "name": "label",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "A Label can appear outside an Input on the left or right.",
+              "isRequired": false,
+              "name": "labelPosition",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "left"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "right"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "left corner"
+                      }
+                    },
+                    {
+                      "name": "literal",
+                      "structure": {
+                        "value": "right corner"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "An Icon Input field can show that it is currently loading data.",
+              "isRequired": false,
+              "name": "loading",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Called on change.\n\n@param {ChangeEvent} event - React's original SyntheticEvent.\n@param {object} data - All props and a proposed value.",
+              "isRequired": false,
+              "name": "onChange",
+              "type": {
+                "name": "func",
+                "structure": {}
+              }
+            },
+            {
+              "description": "An Input can vary in size.",
+              "isRequired": false,
+              "name": "size"
+            },
+            {
+              "description": "An Input can receive focus.",
+              "isRequired": false,
+              "name": "tabIndex",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "number",
+                      "structure": {}
+                    },
+                    {
+                      "name": "string",
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Transparent Input has no background.",
+              "isRequired": false,
+              "name": "transparent",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "defaultValue": {
+                "value": "text"
+              },
+              "description": "The HTML input type.",
+              "isRequired": false,
+              "name": "type",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            }
+          ]
+        },
+        {
+          "documentation": {
+            "examples": []
+          },
+          "info": {
             "dirPath": "src/elements/Button/Button",
             "implementation": {
               "framework": "reactjs",
@@ -27,7 +4090,8 @@
                   "name": "Button",
                   "props": {
                     "content": "Discover docs",
-                    "href": "https://react.semantic-ui.com",
+                    "fluid": true,
+                    "href": "#",
                     "icon": "github",
                     "labelPosition": "left"
                   }
@@ -279,7 +4343,7 @@
               "isRequired": false,
               "name": "icon",
               "type": {
-                "name": "custom",
+                "name": "string",
                 "structure": {}
               }
             },
@@ -423,10 +4487,394 @@
               }
             }
           ]
+        },
+        {
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/elements/Button/ButtonGroup",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "javascript",
+              "path": "src/elements/Button/ButtonGroup/ButtonGroup.js"
+            },
+            "presets": [
+              {
+                "path": "src/elements/Button/ButtonGroup/presets/0-default.jsx"
+              }
+            ]
+          },
+          "name": "ButtonGroup",
+          "presets": [
+            {
+              "elements": {
+                "0": {
+                  "name": "ButtonGroup",
+                  "props": {
+                    "children": [
+                      {
+                        "uxpinPresetElementId": "1"
+                      },
+                      {
+                        "uxpinPresetElementId": "2"
+                      },
+                      {
+                        "uxpinPresetElementId": "3"
+                      }
+                    ],
+                    "fluid": true
+                  }
+                },
+                "1": {
+                  "name": "Button",
+                  "props": {
+                    "children": "One"
+                  }
+                },
+                "2": {
+                  "name": "Button",
+                  "props": {
+                    "children": "Two"
+                  }
+                },
+                "3": {
+                  "name": "Button",
+                  "props": {
+                    "children": "Three"
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "0"
+            }
+          ],
+          "properties": [
+            {
+              "description": "An element type to render as (string or function).",
+              "isRequired": false,
+              "name": "as",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can be attached to other content.",
+              "isRequired": false,
+              "name": "attached",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "boolean",
+                      "structure": {}
+                    },
+                    {
+                      "name": "union",
+                      "structure": {
+                        "elements": [
+                          {
+                            "name": "literal",
+                            "structure": {
+                              "value": "left"
+                            }
+                          },
+                          {
+                            "name": "literal",
+                            "structure": {
+                              "value": "right"
+                            }
+                          },
+                          {
+                            "name": "literal",
+                            "structure": {
+                              "value": "top"
+                            }
+                          },
+                          {
+                            "name": "literal",
+                            "structure": {
+                              "value": "bottom"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "description": "Groups can be less pronounced.",
+              "isRequired": false,
+              "name": "basic",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Array of shorthand Button values.",
+              "isRequired": false,
+              "name": "buttons",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Primary content.",
+              "isRequired": false,
+              "name": "children",
+              "type": {
+                "name": "node",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Additional classes.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can have a shared color.",
+              "isRequired": false,
+              "name": "color"
+            },
+            {
+              "description": "Groups can reduce their padding to fit into tighter spaces.",
+              "isRequired": false,
+              "name": "compact",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Shorthand for primary content.",
+              "isRequired": false,
+              "name": "content",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can be aligned to the left or right of its container.",
+              "isRequired": false,
+              "name": "floated"
+            },
+            {
+              "description": "Groups can take the width of their container.",
+              "isRequired": false,
+              "name": "fluid",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can be formatted as icons.",
+              "isRequired": false,
+              "name": "icon",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can be formatted to appear on dark backgrounds.",
+              "isRequired": false,
+              "name": "inverted",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can be formatted as labeled icon buttons.",
+              "isRequired": false,
+              "name": "labeled",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can hint towards a negative consequence.",
+              "isRequired": false,
+              "name": "negative",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can hint towards a positive consequence.",
+              "isRequired": false,
+              "name": "positive",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can be formatted to show different levels of emphasis.",
+              "isRequired": false,
+              "name": "primary",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can be formatted to show different levels of emphasis.",
+              "isRequired": false,
+              "name": "secondary",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can have different sizes.",
+              "isRequired": false,
+              "name": "size"
+            },
+            {
+              "description": "Groups can be formatted to toggle on and off.",
+              "isRequired": false,
+              "name": "toggle",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can be formatted to appear vertically.",
+              "isRequired": false,
+              "name": "vertical",
+              "type": {
+                "name": "boolean",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Groups can have their widths divided evenly.",
+              "isRequired": false,
+              "name": "widths"
+            }
+          ]
+        },
+        {
+          "documentation": {
+            "examples": []
+          },
+          "info": {
+            "dirPath": "src/elements/Button/ButtonOr",
+            "implementation": {
+              "framework": "reactjs",
+              "lang": "javascript",
+              "path": "src/elements/Button/ButtonOr/ButtonOr.js"
+            },
+            "presets": [
+              {
+                "path": "src/elements/Button/ButtonOr/presets/0-default.jsx"
+              }
+            ]
+          },
+          "name": "ButtonOr",
+          "presets": [
+            {
+              "elements": {
+                "0": {
+                  "name": "./ButtonGroup",
+                  "props": {
+                    "children": [
+                      {
+                        "uxpinPresetElementId": "1"
+                      },
+                      {
+                        "uxpinPresetElementId": "2"
+                      },
+                      {
+                        "uxpinPresetElementId": "3"
+                      }
+                    ]
+                  }
+                },
+                "1": {
+                  "name": "Button",
+                  "props": {
+                    "children": "Cancel"
+                  }
+                },
+                "2": {
+                  "name": "ButtonOr",
+                  "props": {}
+                },
+                "3": {
+                  "name": "Button",
+                  "props": {
+                    "children": "Save",
+                    "positive": true
+                  }
+                }
+              },
+              "name": "default",
+              "rootId": "0"
+            }
+          ],
+          "properties": [
+            {
+              "description": "An element type to render as (string or function).",
+              "isRequired": false,
+              "name": "as",
+              "type": {
+                "name": "custom",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Additional classes.",
+              "isRequired": false,
+              "name": "className",
+              "type": {
+                "name": "string",
+                "structure": {}
+              }
+            },
+            {
+              "description": "Or buttons can have their text localized, or adjusted by using the text prop.",
+              "isRequired": false,
+              "name": "text",
+              "type": {
+                "name": "union",
+                "structure": {
+                  "elements": [
+                    {
+                      "name": "number",
+                      "structure": {}
+                    },
+                    {
+                      "name": "string",
+                      "structure": {}
+                    }
+                  ]
+                }
+              }
+            }
+          ]
         }
       ],
       "name": "General"
     }
   ],
-  "name": "Material Design UI"
+  "name": "Semantic UI"
 }

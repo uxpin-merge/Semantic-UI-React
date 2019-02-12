@@ -96,12 +96,7 @@ class Button extends Component {
     fluid: PropTypes.bool,
 
     /** Add an Icon by name, props object, or pass an <Icon />. */
-    icon: customPropTypes.some([
-      PropTypes.bool,
-      PropTypes.string,
-      PropTypes.object,
-      PropTypes.element,
-    ]),
+    icon: PropTypes.string,
 
     /** A button can be formatted to appear on dark backgrounds. */
     inverted: PropTypes.bool,

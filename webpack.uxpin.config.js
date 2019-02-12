@@ -1,37 +1,63 @@
 const webpack = require('webpack')
-
-// const config = require('./config')
-// const pkg = require('./package.json')
-
-// const { paths } = config
+const path = require('path')
 
 module.exports = {
+  entry: './',
   target: 'web',
   devtool: false,
   mode: 'production',
-  plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production'),
-    }),
-  ],
+  resolve: {
+    alias: {
+      '../../theme.config$': path.join(__dirname, 'theme/theme.config'),
+    },
+  },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            babelrc: false,
-            presets: ['@babel/env', '@babel/react'],
-            plugins: [
-              '@babel/plugin-proposal-class-properties',
-              '@babel/plugin-proposal-export-default-from',
-              '@babel/plugin-proposal-export-namespace-from',
-              '@babel/plugin-syntax-dynamic-import',
-            ],
+        loader: 'babel-loader',
+      },
+      {
+        test: /\.less$/,
+        use: [
+          {
+            loader: 'style-loader',
           },
-        },
+          {
+            loader: 'css-loader',
+          },
+          {
+            loader: 'less-loader',
+            options: {
+              paths: [path.resolve(__dirname, 'node_modules'), path.resolve(__dirname, 'theme')],
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: 'style-loader',
+            options: {
+              insertAt: {
+                before: 'link',
+              },
+            },
+          },
+          {
+            loader: 'css-loader',
+          },
+        ]
+      },
+      {
+        test: /\.(svg|gif|jpe?g|png)$/,
+        loader: 'url-loader?limit=10000',
+      },
+      {
+        test: /\.(eot|woff|woff2|ttf)$/,
+        loader: 'url-loader?limit=100000',
       },
     ],
   },

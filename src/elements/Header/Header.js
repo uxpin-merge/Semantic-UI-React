@@ -114,7 +114,21 @@ Header.propTypes = {
   className: PropTypes.string,
 
   /** Color of the header. */
-  color: PropTypes.oneOf(SUI.COLORS),
+  color: PropTypes.oneOf([
+    'red',
+    'orange',
+    'yellow',
+    'olive',
+    'green',
+    'teal',
+    'blue',
+    'violet',
+    'purple',
+    'pink',
+    'brown',
+    'grey',
+    'black',
+  ]),
 
   /** Shorthand for primary content. */
   content: customPropTypes.contentShorthand,
@@ -126,13 +140,10 @@ Header.propTypes = {
   dividing: PropTypes.bool,
 
   /** Header can sit to the left or right of other content. */
-  floated: PropTypes.oneOf(SUI.FLOATS),
+  floated: PropTypes.oneOf(['left', 'right']),
 
   /** Add an icon by icon name or pass an Icon. */
-  icon: customPropTypes.every([
-    customPropTypes.disallow(['image']),
-    PropTypes.oneOfType([PropTypes.bool, customPropTypes.itemShorthand]),
-  ]),
+  icon: PropTypes.string,
 
   /** Add an image by img src or pass an Image. */
   image: customPropTypes.every([
@@ -144,7 +155,7 @@ Header.propTypes = {
   inverted: PropTypes.bool,
 
   /** Content headings are sized with em and are based on the font-size of their container. */
-  size: PropTypes.oneOf(_.without(SUI.SIZES, 'big', 'massive', 'mini')),
+  size: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
 
   /** Headers may be formatted to label smaller or de-emphasized content. */
   sub: PropTypes.bool,
@@ -153,7 +164,7 @@ Header.propTypes = {
   subheader: customPropTypes.itemShorthand,
 
   /** Align header content. */
-  textAlign: PropTypes.oneOf(SUI.TEXT_ALIGNMENTS),
+  textAlign: PropTypes.oneOf(['left', 'center', 'right', 'justified']),
 }
 
 Header.Content = HeaderContent
