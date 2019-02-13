@@ -4,6 +4,7 @@
 .DS_Store
 .idea/
 .yarn-cache/
+.uxpin-merge/
 
 coverage/
 dist/
