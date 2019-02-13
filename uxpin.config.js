@@ -11,6 +11,7 @@ module.exports = {
           'src/elements/Flag/Flag.js',
           'src/elements/Header/Header.js',
           'src/elements/Icon/Icon.js',
+          'src/elements/Label/Label.js',
         ],
       },
     ],
