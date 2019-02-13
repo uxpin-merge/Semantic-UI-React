@@ -53,7 +53,22 @@ export default class Label extends Component {
     className: PropTypes.string,
 
     /** Color of the label. */
-    color: PropTypes.oneOf(SUI.COLORS),
+    color: PropTypes.oneOf([
+      ...SUI.COLORS,
+      'red',
+      'orange',
+      'yellow',
+      'olive',
+      'green',
+      'teal',
+      'blue',
+      'violet',
+      'purple',
+      'pink',
+      'brown',
+      'grey',
+      'black',
+    ]),
 
     /** Shorthand for primary content. */
     content: customPropTypes.contentShorthand,
@@ -74,7 +89,7 @@ export default class Label extends Component {
     horizontal: PropTypes.bool,
 
     /** Shorthand for Icon. */
-    icon: customPropTypes.itemShorthand,
+    icon: PropTypes.string,
 
     /** A label can be formatted to emphasize an image or prop can be used as shorthand for Image. */
     image: PropTypes.oneOfType([PropTypes.bool, customPropTypes.itemShorthand]),
@@ -108,7 +123,17 @@ export default class Label extends Component {
     ribbon: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['right'])]),
 
     /** A label can have different sizes. */
-    size: PropTypes.oneOf(SUI.SIZES),
+    size: PropTypes.oneOf([
+      ...SUI.SIZES,
+      'mini',
+      'tiny',
+      'small',
+      'medium',
+      'large',
+      'big',
+      'huge',
+      'massive',
+    ]),
 
     /** A label can appear as a tag. */
     tag: PropTypes.bool,
