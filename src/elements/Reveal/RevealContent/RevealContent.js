@@ -8,7 +8,7 @@ import {
   getElementType,
   getUnhandledProps,
   useKeyOnly,
-} from '../../lib'
+} from '../../../lib'
 
 /**
  * A content sub-component for the Reveal.
@@ -44,7 +44,7 @@ RevealContent.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** A reveal may contain content that is visible before interaction. */
   hidden: PropTypes.bool,

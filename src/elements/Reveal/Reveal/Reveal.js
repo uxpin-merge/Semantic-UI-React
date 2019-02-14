@@ -8,8 +8,8 @@ import {
   getElementType,
   getUnhandledProps,
   useKeyOnly,
-} from '../../lib'
-import RevealContent from './RevealContent'
+} from '../../../lib'
+import RevealContent from '../RevealContent/RevealContent'
 
 /**
  * A reveal displays additional content in place of previous content when activated.
@@ -62,7 +62,7 @@ Reveal.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** A disabled reveal will not animate when hovered. */
   disabled: PropTypes.bool,
