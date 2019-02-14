@@ -5,6 +5,7 @@
 .idea/
 .yarn-cache/
 .uxpin-merge/
+.uxpin-merge
 .uxpin-merge/*
 
 coverage/

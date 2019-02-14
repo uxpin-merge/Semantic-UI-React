@@ -10,6 +10,7 @@ module.exports = {
           'src/elements/Input/Input.js',
           'src/elements/Flag/Flag.js',
           'src/elements/Header/Header.js',
+          'src/elements/Image/Image.js',
           'src/elements/Icon/Icon.js',
           'src/elements/Label/Label.js',
         ],
