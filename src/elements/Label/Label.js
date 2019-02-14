@@ -71,7 +71,7 @@ export default class Label extends Component {
     ]),
 
     /** Shorthand for primary content. */
-    content: customPropTypes.contentShorthand,
+    content: PropTypes.node,
 
     /** A label can position itself in the corner of an element. */
     corner: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['left', 'right'])]),
