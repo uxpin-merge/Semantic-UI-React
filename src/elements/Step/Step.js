@@ -42,7 +42,7 @@ class Step extends Component {
     content: customPropTypes.contentShorthand,
 
     /** Shorthand for StepDescription. */
-    description: customPropTypes.itemShorthand,
+    description: PropTypes.node,
 
     /** Show that the Loader is inactive. */
     disabled: PropTypes.bool,

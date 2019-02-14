@@ -80,7 +80,17 @@ Loader.propTypes = {
   inverted: PropTypes.bool,
 
   /** Loaders can have different sizes. */
-  size: PropTypes.oneOf(SUI.SIZES),
+  size: PropTypes.oneOf([
+    ...SUI.SIZES,
+    'mini',
+    'tiny',
+    'small',
+    'medium',
+    'large',
+    'big',
+    'huge',
+    'massive',
+  ]),
 }
 
 export default Loader
