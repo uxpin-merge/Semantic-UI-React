@@ -2,4 +2,4 @@
 import * as React from 'react'
 import Label from '../Label'
 
-export default <Label name='mail' />
+export default <Label content='17' icon='github' labelPosition='left' />
