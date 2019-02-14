@@ -13,6 +13,7 @@ module.exports = {
           'src/elements/Image/Image.js',
           'src/elements/Icon/Icon.js',
           'src/elements/Label/Label.js',
+          'src/elements/Loader/Loader.js',
         ],
       },
     ],
