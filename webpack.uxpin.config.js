@@ -6,11 +6,6 @@ module.exports = {
   target: 'web',
   devtool: false,
   mode: 'production',
-  resolve: {
-    alias: {
-      '../../theme.config$': path.join(__dirname, 'theme/theme.config'),
-    },
-  },
   module: {
     rules: [
       {

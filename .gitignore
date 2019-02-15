@@ -17,3 +17,4 @@ docs/src/exampleMenus
 docs/dist/
 node_modules/
 tmp/
+.uxpin-merge/
