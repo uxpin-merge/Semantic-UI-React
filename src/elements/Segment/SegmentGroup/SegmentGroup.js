@@ -10,7 +10,7 @@ import {
   getUnhandledProps,
   SUI,
   useKeyOnly,
-} from '../../lib'
+} from '../../../lib'
 
 /**
  * A group of segments can be formatted to appear together.

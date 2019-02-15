@@ -13,9 +13,9 @@ import {
   useKeyOrValueAndKey,
   useTextAlignProp,
   useValueAndKey,
-} from '../../lib'
-import SegmentGroup from './SegmentGroup'
-import SegmentInline from './SegmentInline'
+} from '../../../lib'
+import SegmentGroup from '../SegmentGroup'
+import SegmentInline from '../SegmentInline'
 
 /**
  * A segment is used to create a grouping of related content.

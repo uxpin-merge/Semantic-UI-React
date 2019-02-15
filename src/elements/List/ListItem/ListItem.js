@@ -10,12 +10,12 @@ import {
   getElementType,
   getUnhandledProps,
   useKeyOnly,
-} from '../../lib'
-import Image from '../../elements/Image'
-import ListContent from './ListContent'
-import ListDescription from './ListDescription'
-import ListHeader from './ListHeader'
-import ListIcon from './ListIcon'
+} from '../../../lib'
+import Image from '../../Image'
+import ListContent from '../ListContent'
+import ListDescription from '../ListDescription'
+import ListHeader from '../ListHeader'
+import ListIcon from '../ListIcon'
 
 /**
  * A list item can contain a set of items.

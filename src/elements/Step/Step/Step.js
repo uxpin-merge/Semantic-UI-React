@@ -10,13 +10,13 @@ import {
   getElementType,
   getUnhandledProps,
   useKeyOnly,
-} from '../../lib'
-import Icon from '../../elements/Icon'
+} from '../../../lib'
+import Icon from '../../Icon'
 
-import StepContent from './StepContent'
-import StepDescription from './StepDescription'
-import StepGroup from './StepGroup'
-import StepTitle from './StepTitle'
+import StepContent from '../StepContent'
+import StepDescription from '../StepDescription'
+import StepGroup from '../StepGroup'
+import StepTitle from '../StepTitle'
 
 /**
  * A step shows the completion status of an activity in a series of activities.

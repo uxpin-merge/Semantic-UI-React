@@ -7,7 +7,6 @@ import {
   customPropTypes,
   getElementType,
   getUnhandledProps,
-  SUI,
   useKeyOnly,
   useKeyOrValueAndKey,
 } from '../../lib'
@@ -80,17 +79,7 @@ Loader.propTypes = {
   inverted: PropTypes.bool,
 
   /** Loaders can have different sizes. */
-  size: PropTypes.oneOf([
-    ...SUI.SIZES,
-    'mini',
-    'tiny',
-    'small',
-    'medium',
-    'large',
-    'big',
-    'huge',
-    'massive',
-  ]),
+  size: PropTypes.oneOf(['mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive']),
 }
 
 export default Loader

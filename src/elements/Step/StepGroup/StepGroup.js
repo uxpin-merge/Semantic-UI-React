@@ -14,8 +14,8 @@ import {
   useKeyOrValueAndKey,
   useValueAndKey,
   useWidthProp,
-} from '../../lib'
-import Step from './Step'
+} from '../../../lib'
+import Step from '../Step'
 
 const numberMap = _.pickBy(numberToWordMap, (val, key) => key <= 8)
 
@@ -89,13 +89,13 @@ StepGroup.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** A fluid step takes up the width of its container. */
   fluid: PropTypes.bool,
 
   /** Shorthand array of props for Step. */
-  items: customPropTypes.collectionShorthand,
+  items: PropTypes.node,
 
   /** A step can show a ordered sequence of steps. */
   ordered: PropTypes.bool,

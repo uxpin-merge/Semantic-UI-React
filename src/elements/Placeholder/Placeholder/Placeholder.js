@@ -8,11 +8,11 @@ import {
   getElementType,
   getUnhandledProps,
   useKeyOnly,
-} from '../../lib'
-import PlaceholderHeader from './PlaceholderHeader'
-import PlaceholderImage from './PlaceholderImage'
-import PlaceholderLine from './PlaceholderLine'
-import PlaceholderParagraph from './PlaceholderParagraph'
+} from '../../../lib'
+import PlaceholderHeader from '../PlaceholderHeader'
+import PlaceholderImage from '../PlaceholderImage'
+import PlaceholderLine from '../PlaceholderLine'
+import PlaceholderParagraph from '../PlaceholderParagraph'
 
 /**
  * A placeholder is used to reserve splace for content that soon will appear in a layout.

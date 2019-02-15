@@ -10,6 +10,7 @@ export default (
       <Image
         src='https://react.semantic-ui.com/images/wireframe/square-image.png'
         size='small'
+        style={{ width: '100%' }}
         uxpId='2'
       />
     </RevealContent>
@@ -18,6 +19,7 @@ export default (
       <Image
         src='https://react.semantic-ui.com/images/avatar/large/ade.jpg'
         size='small'
+        style={{ width: '100%' }}
         uxpId='4'
       />
     </RevealContent>

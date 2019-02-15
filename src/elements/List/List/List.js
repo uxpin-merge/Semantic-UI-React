@@ -13,13 +13,13 @@ import {
   useKeyOrValueAndKey,
   useValueAndKey,
   useVerticalAlignProp,
-} from '../../lib'
-import ListContent from './ListContent'
-import ListDescription from './ListDescription'
-import ListHeader from './ListHeader'
-import ListIcon from './ListIcon'
-import ListItem from './ListItem'
-import ListList from './ListList'
+} from '../../../lib'
+import ListContent from '../ListContent'
+import ListDescription from '../ListDescription'
+import ListHeader from '../ListHeader'
+import ListIcon from '../ListIcon'
+import ListItem from '../ListItem'
+import ListList from '../ListList'
 
 /**
  * A list groups related content.
