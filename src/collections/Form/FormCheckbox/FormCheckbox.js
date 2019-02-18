@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { customPropTypes, getElementType, getUnhandledProps } from '../../lib'
-import Checkbox from '../../modules/Checkbox'
-import FormField from './FormField'
+import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
+import Checkbox from '../../../modules/Checkbox'
+import FormField from '../FormField/FormField/FormField'
 
 /**
  * Sugar for <Form.Field control={Checkbox} />.

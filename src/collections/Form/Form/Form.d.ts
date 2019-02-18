@@ -1,14 +1,14 @@
 import * as React from 'react'
 
-import FormField from './FormField'
-import FormButton from './FormButton'
-import FormCheckbox from './FormCheckbox'
-import FormDropdown from './FormDropdown'
-import FormGroup from './FormGroup'
-import FormInput from './FormInput'
-import FormRadio from './FormRadio'
-import FormSelect from './FormSelect'
-import FormTextArea from './FormTextArea'
+import FormField from '../FormField/FormField'
+import FormButton from '../FormButton/FormButton'
+import FormCheckbox from '../FormCheckbox/FormCheckbox'
+import FormDropdown from '../FormDropdown/FormDropdown'
+import FormGroup from '../FormGroup/FormGroup'
+import FormInput from '../FormInput/FormInput'
+import FormRadio from '../FormRadio/FormRadio'
+import FormSelect from '../FormSelect/FormSelect'
+import FormTextArea from '../FormTextArea/FormTextArea'
 
 export interface FormProps extends StrictFormProps {
   [key: string]: any

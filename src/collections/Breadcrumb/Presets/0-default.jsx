@@ -14,5 +14,9 @@ export default (
       Store
     </BreadcrumbSection>
     <BreadcrumbDivider uxpId='4' />
+    <BreadcrumbSection uxpId='5' active>
+      Product
+    </BreadcrumbSection>
+    <BreadcrumbDivider uxpId='6' />
   </Breadcrumb>
 )

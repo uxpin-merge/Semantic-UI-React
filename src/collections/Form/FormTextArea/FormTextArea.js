@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { customPropTypes, getElementType, getUnhandledProps } from '../../lib'
-import TextArea from '../../addons/TextArea'
+import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
+import TextArea from '../../../addons/TextArea'
 import FormField from './FormField'
 
 /**

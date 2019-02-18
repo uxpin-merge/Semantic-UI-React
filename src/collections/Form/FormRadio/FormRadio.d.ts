@@ -1,8 +1,7 @@
 import * as React from 'react'
 
-import { StrictRadioProps } from '../../addons/Radio'
-import { StrictFormFieldProps } from './FormField'
-
+import { StrictRadioProps } from '../../../addons/Radio'
+import { StrictFormFieldProps } from '../FormField/FormField'
 export interface FormRadioProps extends StrictFormRadioProps {
   [key: string]: any
 }

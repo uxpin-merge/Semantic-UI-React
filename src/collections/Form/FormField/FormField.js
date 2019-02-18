@@ -12,9 +12,9 @@ import {
   SUI,
   useKeyOnly,
   useWidthProp,
-} from '../../lib'
-import Checkbox from '../../modules/Checkbox'
-import Radio from '../../addons/Radio'
+} from '../../../lib'
+import Checkbox from '../../../modules/Checkbox'
+import Radio from '../../../addons/Radio'
 
 /**
  * A field is a form element containing a label and an input.

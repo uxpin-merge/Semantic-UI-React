@@ -9,7 +9,7 @@ import {
   SUI,
   useKeyOnly,
   useWidthProp,
-} from '../../lib'
+} from '../../../lib'
 
 /**
  * A set of fields can appear grouped together.

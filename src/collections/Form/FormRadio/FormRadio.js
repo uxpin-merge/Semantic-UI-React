@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { customPropTypes, getElementType, getUnhandledProps } from '../../lib'
-import Radio from '../../addons/Radio'
+import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
+import Radio from '../../../addons/Radio'
 import FormField from './FormField'
 
 /**

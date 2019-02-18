@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { customPropTypes, getElementType, getUnhandledProps } from '../../lib'
-import Select from '../../addons/Select'
-import Dropdown from '../../modules/Dropdown'
+import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
+import Select from '../../../addons/Select'
+import Dropdown from '../../../modules/Dropdown'
 import FormField from './FormField'
 
 /**

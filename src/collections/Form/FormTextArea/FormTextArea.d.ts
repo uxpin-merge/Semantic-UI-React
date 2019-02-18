@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { StrictTextAreaProps } from '../../addons/TextArea'
-import { StrictFormFieldProps } from './FormField'
+import { StrictTextAreaProps } from '../../../addons/TextArea'
+import { StrictFormFieldProps } from '../FormField/FormField'
 
 export interface FormTextAreaProps extends StrictFormTextAreaProps {
   [key: string]: any

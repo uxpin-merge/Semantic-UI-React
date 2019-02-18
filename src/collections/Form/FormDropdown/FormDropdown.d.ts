@@ -1,8 +1,7 @@
 import * as React from 'react'
 
-import { StrictDropdownProps } from '../../modules/Dropdown'
-import { StrictFormFieldProps } from './FormField'
-
+import { StrictDropdownProps } from '../../../modules/Dropdown'
+import { StrictFormFieldProps } from '../FormField/FormField'
 export interface FormDropdownProps extends StrictFormDropdownProps {
   [key: string]: any
 }

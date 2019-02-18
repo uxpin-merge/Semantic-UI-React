@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { customPropTypes, getElementType, getUnhandledProps } from '../../lib'
-import Input from '../../elements/Input'
+import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
+import Input from '../../../elements/Input'
 import FormField from './FormField'
 
 /**

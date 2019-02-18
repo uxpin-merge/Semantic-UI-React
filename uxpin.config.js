@@ -2,18 +2,33 @@ module.exports = {
   components: {
     categories: [
       {
-        name: 'General',
+        name: 'Collections',
         include: [
           'src/collections/Breadcrumb/Breadcrumb.js',
           'src/collections/Breadcrumb/BreadcrumbSection/BreadcrumbSection.js',
           'src/collections/Breadcrumb/BreadcrumbDivider/BreadcrumbDivider.js',
+          'src/collections/Form/Form/Form.js',
+          'src/collections/Form/FormButton/FormButton.js',
+          'src/collections/Form/FormCheckbox/FormCheckbox.js',
+          'src/collections/Form/FormDropdown/FormDropdown.js',
+          'src/collections/Form/FormField/FormField.js',
+          'src/collections/Form/FormGroup/FormGroup.js',
+          'src/collections/Form/FormInput/FormInput.js',
+          'src/collections/Form/FormRadio/FormRadio.js',
+          'src/collections/Form/FormSelect/FormSelect.js',
+          'src/collections/Form/FormTextArea/FormTextArea.js',
+        ],
+      },
+      {
+        name: 'Elements',
+        include: [
           'src/elements/Button/Button/Button.js',
           'src/elements/Button/ButtonGroup/ButtonGroup.js',
           'src/elements/Button/ButtonOr/ButtonOr.js',
           'src/elements/Container/Container.js',
           'src/elements/Divider/Divider.js',
           'src/elements/Input/Input.js',
-          'src/elements/Flag/Flag.js',
+          'src/elemenąts/Flag/Flag.js',
           'src/elements/Header/Header.js',
           'src/elements/Image/Image.js',
           'src/elements/Icon/Icon.js',
