@@ -11,15 +11,15 @@ import {
   useKeyOnly,
   useWidthProp,
 } from '../../../lib'
-import FormButton from './FormButton'
-import FormCheckbox from './FormCheckbox'
-import FormDropdown from './FormDropdown'
-import FormField from './FormField'
-import FormGroup from './FormGroup'
-import FormInput from './FormInput'
-import FormRadio from './FormRadio'
-import FormSelect from './FormSelect'
-import FormTextArea from './FormTextArea'
+import FormButton from '../FormButton/FormButton'
+import FormCheckbox from '../FormCheckbox/FormCheckbox'
+import FormDropdown from '../FormDropdown/FormDropdown'
+import FormField from '../FormField/FormField'
+import FormGroup from '../FormGroup/FormGroup'
+import FormInput from '../FormInput/FormInput'
+import FormRadio from '../FormRadio/FormRadio'
+import FormSelect from '../FormSelect/FormSelect'
+import FormTextArea from '../FormTextArea/FormTextArea'
 
 /**
  * A Form displays a set of related user input fields in a structured way.

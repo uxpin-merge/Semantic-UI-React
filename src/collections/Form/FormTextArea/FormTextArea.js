@@ -2,7 +2,7 @@ import React from 'react'
 
 import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
 import TextArea from '../../../addons/TextArea'
-import FormField from './FormField'
+import FormField from '../FormField/FormField'
 
 /**
  * Sugar for <Form.Field control={TextArea} />.

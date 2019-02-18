@@ -4,7 +4,7 @@ import React from 'react'
 import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
 import Select from '../../../addons/Select'
 import Dropdown from '../../../modules/Dropdown'
-import FormField from './FormField'
+import FormField from '../FormField/FormField'
 
 /**
  * Sugar for <Form.Field control={Select} />.
