@@ -10,7 +10,7 @@ import {
   getUnhandledProps,
   getElementType,
   useKeyOnly,
-} from '../../lib'
+} from '../../../lib'
 
 /**
  * A section sub-component for Breadcrumb component.

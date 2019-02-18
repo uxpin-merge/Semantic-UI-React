@@ -6,8 +6,11 @@ import {
   SemanticShorthandItem,
 } from '../../generic'
 import { IconProps } from '../../elements/Icon'
-import BreadcrumbDivider from './BreadcrumbDivider'
-import { default as BreadcrumbSection, BreadcrumbSectionProps } from './BreadcrumbSection'
+import BreadcrumbDivider from './BreadcrumbDivider/BreadcrumbDivider'
+import {
+  default as BreadcrumbSection,
+  BreadcrumbSectionProps,
+} from './BreadcrumbSection/BreadcrumbSection'
 
 export interface BreadcrumbProps extends StrictBreadcrumbProps {
   [key: string]: any

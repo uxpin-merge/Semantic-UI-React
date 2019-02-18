@@ -4,6 +4,9 @@ module.exports = {
       {
         name: 'General',
         include: [
+          'src/collections/Breadcrumb/Breadcrumb.js',
+          'src/collections/Breadcrumb/BreadcrumbSection/BreadcrumbSection.js',
+          'src/collections/Breadcrumb/BreadcrumbDivider/BreadcrumbDivider.js',
           'src/elements/Button/Button/Button.js',
           'src/elements/Button/ButtonGroup/ButtonGroup.js',
           'src/elements/Button/ButtonOr/ButtonOr.js',

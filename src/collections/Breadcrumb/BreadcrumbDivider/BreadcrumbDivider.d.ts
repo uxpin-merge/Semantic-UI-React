@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { SemanticShorthandContent, SemanticShorthandItem } from '../../generic'
-import { IconProps } from '../../elements/Icon'
+import { SemanticShorthandContent, SemanticShorthandItem } from '../../../generic'
+import { IconProps } from '../../../elements/Icon'
 
 export interface BreadcrumbDividerProps extends StrictBreadcrumbDividerProps {
   [key: string]: any
