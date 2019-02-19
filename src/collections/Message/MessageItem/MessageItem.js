@@ -8,7 +8,7 @@ import {
   customPropTypes,
   getElementType,
   getUnhandledProps,
-} from '../../lib'
+} from '../../../lib'
 
 /**
  * A message list can contain an item.

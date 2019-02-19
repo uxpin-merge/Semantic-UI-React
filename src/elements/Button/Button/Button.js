@@ -84,7 +84,7 @@ class Button extends Component {
     compact: PropTypes.bool,
 
     /** Shorthand for primary content. */
-    content: customPropTypes.contentShorthand,
+    content: PropTypes.string,
 
     /** A button can show it is currently unable to be interacted with. */
     disabled: PropTypes.bool,
@@ -184,7 +184,7 @@ class Button extends Component {
     _.invoke(this.props, 'onClick', e, this.props)
   }
 
-  handleRef = (c) => (this.ref = c)
+  handleRef = c => (this.ref = c)
 
   hasIconClass = () => {
     const { labelPosition, children, content, icon } = this.props
@@ -298,6 +298,6 @@ class Button extends Component {
   }
 }
 
-Button.create = createShorthandFactory(Button, (value) => ({ content: value }))
+Button.create = createShorthandFactory(Button, value => ({ content: value }))
 
 export default Button

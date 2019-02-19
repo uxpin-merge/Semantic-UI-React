@@ -1,11 +1,11 @@
 import * as React from 'react'
-import { SemanticShorthandContent } from '../../generic'
+import { SemanticShorthandContent } from '../../../generic'
 
-export interface MessageContentProps extends StrictMessageContentProps {
+export interface MessageItemProps extends StrictMessageItemProps {
   [key: string]: any
 }
 
-export interface StrictMessageContentProps {
+export interface StrictMessageItemProps {
   /** An element type to render as (string or function). */
   as?: any
 
@@ -19,6 +19,6 @@ export interface StrictMessageContentProps {
   content?: SemanticShorthandContent
 }
 
-declare const MessageContent: React.StatelessComponent<MessageContentProps>
+declare const MessageItem: React.StatelessComponent<MessageItemProps>
 
-export default MessageContent
+export default MessageItem

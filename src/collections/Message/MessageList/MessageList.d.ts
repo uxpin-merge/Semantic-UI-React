@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { SemanticShorthandCollection } from '../../generic'
-import { MessageItemProps } from './MessageItem'
+import { SemanticShorthandCollection } from '../../../generic'
+import { MessageItemProps } from '../MessageItem/MessageItem'
 
 export interface MessageListProps extends StrictMessageListProps {
   [key: string]: any

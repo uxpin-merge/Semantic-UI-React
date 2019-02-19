@@ -5,11 +5,11 @@ import {
   SemanticShorthandCollection,
   SemanticShorthandContent,
   SemanticShorthandItem,
-} from '../../generic'
-import MessageContent from './MessageContent'
-import { default as MessageHeader, MessageHeaderProps } from './MessageHeader'
-import { default as MessageItem, MessageItemProps } from './MessageItem'
-import MessageList from './MessageList'
+} from '../../../generic'
+import MessageContent from '../MessageContent/MessageContent'
+import { default as MessageHeader, MessageHeaderProps } from '../MessageHeader/MessageHeader'
+import { default as MessageItem, MessageItemProps } from '../MessageItem/MessageItem'
+import MessageList from '../MessageList/MessageList'
 
 export type MessageSizeProp = 'mini' | 'tiny' | 'small' | 'large' | 'big' | 'huge' | 'massive'
 

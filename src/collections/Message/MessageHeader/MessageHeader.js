@@ -8,7 +8,7 @@ import {
   customPropTypes,
   getElementType,
   getUnhandledProps,
-} from '../../lib'
+} from '../../../lib'
 
 /**
  * A message can contain a header.

@@ -125,7 +125,7 @@ FormField.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.string,
 
   /**
    * A form control component (i.e. Dropdown) or HTML tagName (i.e. 'input').
@@ -150,7 +150,7 @@ FormField.propTypes = {
   // Do not disallow children with `label` shorthand
   // The `control` might accept a `label` prop and `children`
   /** Mutually exclusive with children. */
-  label: PropTypes.oneOfType([PropTypes.node, PropTypes.object]),
+  label: PropTypes.node,
 
   /** A field can show that input is mandatory. */
   required: PropTypes.bool,

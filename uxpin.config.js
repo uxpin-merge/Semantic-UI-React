@@ -17,6 +17,7 @@ module.exports = {
           'src/collections/Form/FormRadio/FormRadio.js',
           'src/collections/Form/FormSelect/FormSelect.js',
           'src/collections/Form/FormTextArea/FormTextArea.js',
+          'src/collections/Message/Message/Message.js',
         ],
       },
       {

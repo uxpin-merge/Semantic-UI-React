@@ -12,12 +12,12 @@ import {
   SUI,
   useKeyOnly,
   useKeyOrValueAndKey,
-} from '../../lib'
-import Icon from '../../elements/Icon'
-import MessageContent from './MessageContent'
-import MessageHeader from './MessageHeader'
-import MessageList from './MessageList'
-import MessageItem from './MessageItem'
+} from '../../../lib'
+import Icon from '../../../elements/Icon'
+import MessageContent from '../MessageContent'
+import MessageHeader from '../MessageHeader'
+import MessageList from '../MessageList'
+import MessageItem from '../MessageItem'
 
 /**
  * A message displays information that explains nearby content.
@@ -53,13 +53,13 @@ export default class Message extends Component {
     floating: PropTypes.bool,
 
     /** Shorthand for MessageHeader. */
-    header: customPropTypes.itemShorthand,
+    header: PropTypes.string,
 
     /** A message can be hidden. */
     hidden: PropTypes.bool,
 
     /** A message can contain an icon. */
-    icon: PropTypes.oneOfType([customPropTypes.itemShorthand, PropTypes.bool]),
+    icon: PropTypes.string,
 
     /** A message may be formatted to display information. */
     info: PropTypes.bool,
