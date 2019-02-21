@@ -13,8 +13,8 @@ import {
   useKeyOnly,
   useTextAlignProp,
   useVerticalAlignProp,
-} from '../../lib'
-import TableCell from './TableCell'
+} from '../../../lib'
+import TableCell from '../TableCell'
 
 /**
  * A table can have rows.

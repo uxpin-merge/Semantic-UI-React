@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { StrictTableCellProps } from './TableCell'
+import { StrictTableCellProps } from '../TableCell/TableCell'
 
 export interface TableHeaderCellProps extends StrictTableHeaderCellProps {
   [key: string]: any

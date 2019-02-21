@@ -12,8 +12,8 @@ import {
   SUI,
   useKeyOnly,
   useKeyOrValueAndKey,
-} from '../../lib'
-import Icon from '../../elements/Icon'
+} from '../../../lib'
+import Icon from '../../../elements/Icon'
 
 /**
  * A menu can contain an item.

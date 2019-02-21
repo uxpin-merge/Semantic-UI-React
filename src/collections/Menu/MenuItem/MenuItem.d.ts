@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { SemanticCOLORS, SemanticShorthandContent, SemanticShorthandItem } from '../../generic'
-import { IconProps } from '../../elements/Icon'
+import { SemanticCOLORS, SemanticShorthandContent, SemanticShorthandItem } from '../../../generic'
+import { IconProps } from '../../../elements/Icon'
 
 export interface MenuItemProps extends StrictMenuItemProps {
   [key: string]: any

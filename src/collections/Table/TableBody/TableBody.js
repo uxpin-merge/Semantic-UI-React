@@ -2,7 +2,7 @@ import cx from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { customPropTypes, getElementType, getUnhandledProps } from '../../lib'
+import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
 
 function TableBody(props) {
   const { children, className } = props

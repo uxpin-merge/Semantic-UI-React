@@ -14,8 +14,8 @@ import {
   useTextAlignProp,
   useVerticalAlignProp,
   useWidthProp,
-} from '../../lib'
-import Icon from '../../elements/Icon'
+} from '../../../lib'
+import Icon from '../../../elements/Icon'
 
 /**
  * A table row can have cells.

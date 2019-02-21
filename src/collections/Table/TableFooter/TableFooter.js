@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { customPropTypes, getUnhandledProps } from '../../lib'
-import TableHeader from './TableHeader'
+import { customPropTypes, getUnhandledProps } from '../../../lib'
+import TableHeader from '../TableHeader'
 
 /**
  * A table can have a footer.

@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { SemanticShorthandCollection, SemanticVERTICALALIGNMENTS } from '../../generic'
-import { TableCellProps } from './TableCell'
+import { SemanticShorthandCollection, SemanticVERTICALALIGNMENTS } from '../../../generic'
+import { TableCellProps } from '../TableCell/TableCell'
 
 export interface TableRowProps extends StrictTableRowProps {
   [key: string]: any

@@ -1,9 +1,9 @@
 import * as React from 'react'
 
 import { SemanticCOLORS, SemanticShorthandCollection, SemanticWIDTHS } from '../../generic'
-import MenuHeader from './MenuHeader'
-import { default as MenuItem, MenuItemProps } from './MenuItem'
-import MenuMenu from './MenuMenu'
+import MenuHeader from './MenuHeader/MenuHeader'
+import { default as MenuItem, MenuItemProps } from './MenuItem/MenuItem'
+import MenuMenu from './MenuMenu/MenuMenu'
 
 export interface MenuProps extends StrictMenuProps {
   [key: string]: any

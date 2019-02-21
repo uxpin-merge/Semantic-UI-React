@@ -30,7 +30,7 @@ class Menu extends Component {
     as: customPropTypes.as,
 
     /** Index of the currently active item. */
-    activeIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    activeIndex: PropTypes.string,
 
     /** A menu may be attached to other content segments. */
     attached: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['top', 'bottom'])]),
@@ -51,7 +51,7 @@ class Menu extends Component {
     compact: PropTypes.bool,
 
     /** Initial activeIndex value. */
-    defaultActiveIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    defaultActiveIndex: PropTypes.string,
 
     /** A menu can be fixed to a side of its context. */
     fixed: PropTypes.oneOf(['left', 'right', 'bottom', 'top']),

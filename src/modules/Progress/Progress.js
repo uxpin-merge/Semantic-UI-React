@@ -38,7 +38,21 @@ class Progress extends Component {
     className: PropTypes.string,
 
     /** A progress bar can have different colors. */
-    color: PropTypes.oneOf(SUI.COLORS),
+    color: PropTypes.oneOf([
+      'red',
+      'orange',
+      'yellow',
+      'olive',
+      'green',
+      'teal',
+      'blue',
+      'violet',
+      'purple',
+      'pink',
+      'brown',
+      'grey',
+      'black',
+    ]),
 
     /** Shorthand for primary content. */
     content: customPropTypes.contentShorthand,
@@ -59,10 +73,7 @@ class Progress extends Component {
     label: customPropTypes.itemShorthand,
 
     /** Current percent complete. */
-    percent: customPropTypes.every([
-      customPropTypes.disallow(['total', 'value']),
-      PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    ]),
+    percent: PropTypes.number,
 
     /** Decimal point precision for calculated progress. */
     precision: PropTypes.number,

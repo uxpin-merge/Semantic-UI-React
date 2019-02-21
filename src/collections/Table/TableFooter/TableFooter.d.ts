@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { StrictTableHeaderProps } from './TableHeader'
+import { StrictTableHeaderProps } from '../TableHeader/TableHeader'
 
 export interface TableFooterProps extends StrictTableFooterProps {
   [key: string]: any

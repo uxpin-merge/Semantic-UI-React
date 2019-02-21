@@ -119,7 +119,7 @@ Table.propTypes = {
   attached: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['top', 'bottom'])]),
 
   /** A table can reduce its complexity to increase readability. */
-  basic: PropTypes.oneOfType([PropTypes.oneOf(['very']), PropTypes.bool]),
+  basic: PropTypes.bool,
 
   /** A table may be divided each row into separate cells. */
   celled: PropTypes.bool,
@@ -134,13 +134,27 @@ Table.propTypes = {
   collapsing: PropTypes.bool,
 
   /** A table can be given a color to distinguish it from other tables. */
-  color: PropTypes.oneOf(SUI.COLORS),
+  color: PropTypes.oneOf([
+    'red',
+    'orange',
+    'yellow',
+    'olive',
+    'green',
+    'teal',
+    'blue',
+    'violet',
+    'purple',
+    'pink',
+    'brown',
+    'grey',
+    'black',
+  ]),
 
   /** A table can specify its column count to divide its content evenly. */
   columns: PropTypes.oneOf(SUI.WIDTHS),
 
   /** A table may sometimes need to be more compact to make more rows visible at a time. */
-  compact: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['very'])]),
+  compact: PropTypes.bool,
 
   /** A table may be formatted to emphasize a first column that defines a rows content. */
   definition: PropTypes.bool,
@@ -151,16 +165,16 @@ Table.propTypes = {
   fixed: PropTypes.bool,
 
   /** Shorthand for a TableRow to be placed within Table.Footer. */
-  footerRow: customPropTypes.itemShorthand,
+  footerRow: PropTypes.string,
 
   /** Shorthand for a TableRow to be placed within Table.Header. */
-  headerRow: customPropTypes.itemShorthand,
+  headerRow: PropTypes.string,
 
   /** A table's colors can be inverted. */
   inverted: PropTypes.bool,
 
   /** A table may sometimes need to be more padded for legibility. */
-  padded: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['very'])]),
+  padded: PropTypes.bool,
 
   /**
    * Mapped over `tableData` and should return shorthand for each Table.Row to be placed within Table.Body.
@@ -210,7 +224,7 @@ Table.propTypes = {
   unstackable: PropTypes.bool,
 
   /** A table can adjust its text alignment. */
-  verticalAlign: PropTypes.oneOf(SUI.VERTICAL_ALIGNMENTS),
+  verticalAlign: PropTypes.oneOf(['bottom', 'middle', 'top']),
 }
 
 Table.Body = TableBody

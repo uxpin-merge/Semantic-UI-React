@@ -2,8 +2,8 @@ import cx from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { customPropTypes, getUnhandledProps, useValueAndKey } from '../../lib'
-import TableCell from './TableCell'
+import { customPropTypes, getUnhandledProps, useValueAndKey } from '../../../lib'
+import TableCell from '../TableCell'
 
 /**
  * A table can have a header cell.

@@ -8,7 +8,7 @@ import {
   getElementType,
   getUnhandledProps,
   useKeyOnly,
-} from '../../lib'
+} from '../../../lib'
 
 /**
  * A table can have a header.
