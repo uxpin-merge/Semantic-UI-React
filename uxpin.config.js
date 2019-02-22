@@ -51,6 +51,10 @@ module.exports = {
         ],
       },
       {
+        name: 'Views',
+        include: ['src/views/Card/Card.js'],
+      },
+      {
         name: 'Modules',
         include: [
           'src/modules/Accordion/Accordion.js',
