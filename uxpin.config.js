@@ -53,11 +53,15 @@ module.exports = {
       {
         name: 'Modules',
         include: [
+          'src/modules/Accordion/Accordion.js',
           'src/modules/Checkbox/Checkbox.js',
+          'src/modules/Dropdown/Dropdown.js',
           'src/modules/Embed/Embed.js',
+          'src/modules/Popup/Popup.js',
           'src/modules/Progress/Progress.js',
           'src/modules/Modal/Modal.js',
-          'src/modules/Dropdown/Dropdown.js',
+          'src/modules/Rating/Rating.js',
+          'src/modules/Sidebar/Sidebar.js',
           'src/modules/Tab/Tab.js',
         ],
       },

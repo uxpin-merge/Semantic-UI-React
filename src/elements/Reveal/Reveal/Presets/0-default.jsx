@@ -5,7 +5,7 @@ import Reveal from '../Reveal'
 import RevealContent from '../../RevealContent/RevealContent'
 
 export default (
-  <Reveal animated='fade' uxpId='0'>
+  <Reveal animated='fade' uxpId='0' style={{ width: '200px' }}>
     <RevealContent visible uxpId='1'>
       <Image
         src='https://react.semantic-ui.com/images/wireframe/square-image.png'
