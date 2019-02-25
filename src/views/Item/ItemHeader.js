@@ -37,7 +37,7 @@ ItemHeader.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 }
 
 ItemHeader.create = createShorthandFactory(ItemHeader, content => ({ content }))

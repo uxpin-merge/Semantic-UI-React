@@ -73,19 +73,19 @@ ItemGroup.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Items can be divided to better distinguish between grouped content. */
   divided: PropTypes.bool,
 
   /** Shorthand array of props for Item. */
-  items: customPropTypes.collectionShorthand,
+  items: PropTypes.node,
 
   /** An item can be formatted so that the entire contents link to another page. */
   link: PropTypes.bool,
 
   /** A group of items can relax its padding to provide more negative space. */
-  relaxed: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['very'])]),
+  relaxed: PropTypes.bool,
 
   /** Prevent items from stacking on mobile. */
   unstackable: PropTypes.bool,

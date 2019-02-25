@@ -8,22 +8,21 @@ import {
   getElementType,
   getUnhandledProps,
   useKeyOnly,
-} from '../../lib'
-import CommentAction from './CommentAction'
-import CommentActions from './CommentActions'
-import CommentAuthor from './CommentAuthor'
-import CommentAvatar from './CommentAvatar'
-import CommentContent from './CommentContent'
-import CommentGroup from './CommentGroup'
-import CommentMetadata from './CommentMetadata'
-import CommentText from './CommentText'
+} from '../../../lib'
+import CommentAction from '../CommentAction'
+import CommentActions from '../CommentActions'
+import CommentAuthor from '../CommentAuthor'
+import CommentAvatar from '../CommentAvatar'
+import CommentContent from '../CommentContent'
+import CommentGroup from '../CommentGroup/CommentGroup'
+import CommentMetadata from '../CommentMetadata'
+import CommentText from '../CommentText'
 
 /**
  * A comment displays user feedback to site content.
  */
 function Comment(props) {
   const { className, children, collapsed, content } = props
-
   const classes = cx(useKeyOnly(collapsed, 'collapsed'), 'comment', className)
   const rest = getUnhandledProps(Comment, props)
   const ElementType = getElementType(Comment, props)
@@ -49,7 +48,7 @@ Comment.propTypes = {
   collapsed: PropTypes.bool,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 }
 
 Comment.Author = CommentAuthor

@@ -2,4 +2,4 @@
 import * as React from 'react'
 import Checkbox from '../Checkbox'
 
-export default <Checkbox label='Make my profile visible' />
+export default <Checkbox label='Make my profile visible' style={{ width: '100%' }} />

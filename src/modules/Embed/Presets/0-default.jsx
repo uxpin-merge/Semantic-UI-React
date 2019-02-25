@@ -5,7 +5,8 @@ import Embed from '../Embed'
 export default (
   <Embed
     icon='right circle arrow'
-    placeholder='/images/image-16by9.png'
-    url='http://www.myfav.es/jack'
+    placeholder='https://www.logistec.com/wp-content/uploads/2017/12/placeholder.png'
+    id='O6Xo21L0ybE'
+    source='youtube'
   />
 )

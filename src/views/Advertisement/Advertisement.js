@@ -48,10 +48,10 @@ Advertisement.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Text to be displayed on the advertisement. */
-  test: PropTypes.oneOfType([PropTypes.bool, PropTypes.number, PropTypes.string]),
+  test: PropTypes.string,
 
   /** Varies the size of the advertisement. */
   unit: PropTypes.oneOf([

@@ -4,7 +4,7 @@ import Menu from '../Menu'
 import MenuItem from '../MenuItem/MenuItem'
 
 export default (
-  <Menu uxpId='0'>
+  <Menu uxpId='0' style={{ width: '100%' }}>
     <MenuItem name='Editorials' active uxpId='1'>
       {' '}
       Editorials{' '}

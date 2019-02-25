@@ -43,7 +43,7 @@ export default class Embed extends Component {
     color: customPropTypes.every([customPropTypes.demand(['source']), PropTypes.string]),
 
     /** Shorthand for primary content. */
-    content: customPropTypes.contentShorthand,
+    content: PropTypes.node,
 
     /** Initial value of active. */
     defaultActive: PropTypes.bool,
@@ -52,7 +52,7 @@ export default class Embed extends Component {
     hd: customPropTypes.every([customPropTypes.demand(['source']), PropTypes.bool]),
 
     /** Specifies an icon to use with placeholder content. */
-    icon: customPropTypes.itemShorthand,
+    icon: PropTypes.node,
 
     /** Specifies an id for source. */
     id: customPropTypes.every([customPropTypes.demand(['source']), PropTypes.string]),

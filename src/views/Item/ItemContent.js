@@ -7,7 +7,6 @@ import {
   customPropTypes,
   getElementType,
   getUnhandledProps,
-  SUI,
   useVerticalAlignProp,
 } from '../../lib'
 import ItemHeader from './ItemHeader'
@@ -55,22 +54,22 @@ ItemContent.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Shorthand for ItemDescription component. */
-  description: customPropTypes.itemShorthand,
+  description: PropTypes.node,
 
   /** Shorthand for ItemExtra component. */
-  extra: customPropTypes.itemShorthand,
+  extra: PropTypes.node,
 
   /** Shorthand for ItemHeader component. */
-  header: customPropTypes.itemShorthand,
+  header: PropTypes.node,
 
   /** Shorthand for ItemMeta component. */
-  meta: customPropTypes.itemShorthand,
+  meta: PropTypes.node,
 
   /** Content can specify its vertical alignment. */
-  verticalAlign: PropTypes.oneOf(SUI.VERTICAL_ALIGNMENTS),
+  verticalAlign: PropTypes.oneOf(['bottom', 'middle', 'top']),
 }
 
 export default ItemContent

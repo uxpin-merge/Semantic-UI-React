@@ -1,1 +1,1 @@
-export { default, CommentProps, StrictCommentProps } from './Comment'
+export { default, CommentProps, StrictCommentProps } from '../Comment/Comment/Comment'

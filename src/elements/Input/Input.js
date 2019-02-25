@@ -33,7 +33,7 @@ class Input extends Component {
     as: customPropTypes.as,
 
     /** An Input can be formatted to alert the user to an action they may perform. */
-    action: PropTypes.oneOfType([PropTypes.bool, customPropTypes.itemShorthand]),
+    action: PropTypes.bool,
 
     /** An action can appear along side an Input on the left or right. */
     actionPosition: PropTypes.oneOf(['left']),
@@ -69,7 +69,7 @@ class Input extends Component {
     inverted: PropTypes.bool,
 
     /** Optional Label to display along side the Input. */
-    label: customPropTypes.itemShorthand,
+    label: PropTypes.node,
 
     /** A Label can appear outside an Input on the left or right. */
     labelPosition: PropTypes.oneOf(['left', 'right', 'left corner', 'right corner']),
@@ -86,7 +86,17 @@ class Input extends Component {
     onChange: PropTypes.func,
 
     /** An Input can vary in size. */
-    size: PropTypes.oneOf(SUI.SIZES),
+    size: PropTypes.oneOf([
+      SUI.SIZES,
+      'mini',
+      'tiny',
+      'small',
+      'medium',
+      'large',
+      'big',
+      'huge',
+      'massive',
+    ]),
 
     /** An Input can receive focus. */
     tabIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),

@@ -31,7 +31,7 @@ CommentMetadata.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 }
 
 export default CommentMetadata

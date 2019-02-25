@@ -10,7 +10,7 @@ import {
   getUnhandledProps,
   SUI,
   useKeyOnly,
-} from '../../lib'
+} from '../../../lib'
 
 /**
  * Comments can be grouped.
@@ -51,7 +51,7 @@ CommentGroup.propTypes = {
   collapsed: PropTypes.bool,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Comments can hide extra information unless a user shows intent to interact with a comment. */
   minimal: PropTypes.bool,

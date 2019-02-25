@@ -2,4 +2,4 @@
 import * as React from 'react'
 import Loader from '../Loader'
 
-export default <Loader />
+export default <Loader active />

@@ -9,7 +9,7 @@ import {
   getUnhandledProps,
   htmlImageProps,
   partitionHTMLProps,
-} from '../../lib'
+} from '../../../lib'
 
 /**
  * A comment can contain an image or avatar.
