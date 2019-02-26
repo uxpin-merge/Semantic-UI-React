@@ -3,6 +3,7 @@ import * as React from 'react'
 import CommentGroup from '../CommentGroup'
 import Comment from '../../Comment/Comment'
 import CommentAvatar from '../../CommentAvatar/CommentAvatar'
+import CommentText from '../../CommentText'
 // import CommentContent from '../../CommentContent'
 // import CommentAuthor from '../../CommentAuthor'
 // import CommentMetadata from '../CommentMetadata'
@@ -16,6 +17,7 @@ export default (
         src='https://www.thecoolector.com/wp-content/uploads/2019/02/fi1-e1551086131749.jpg'
         uxpId='2kjgkk'
       />
+      <CommentText uxpId='2'>text</CommentText>
     </Comment>
   </CommentGroup>
 )

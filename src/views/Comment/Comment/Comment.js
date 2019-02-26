@@ -26,7 +26,6 @@ function Comment(props) {
   const classes = cx(useKeyOnly(collapsed, 'collapsed'), 'comment', className)
   const rest = getUnhandledProps(Comment, props)
   const ElementType = getElementType(Comment, props)
-
   return (
     <ElementType {...rest} className={classes}>
       {childrenUtils.isNil(children) ? content : children}
