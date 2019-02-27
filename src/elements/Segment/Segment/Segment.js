@@ -108,7 +108,21 @@ Segment.propTypes = {
   clearing: PropTypes.bool,
 
   /** Segment can be colored. */
-  color: PropTypes.oneOf(SUI.COLORS),
+  color: PropTypes.oneOf([
+    'red',
+    'orange',
+    'yellow',
+    'olive',
+    'green',
+    'teal',
+    'blue',
+    'violet',
+    'purple',
+    'pink',
+    'brown',
+    'grey',
+    'black',
+  ]),
 
   /** A segment may take up only as much space as is necessary. */
   compact: PropTypes.bool,

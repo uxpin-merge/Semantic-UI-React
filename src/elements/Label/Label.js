@@ -77,7 +77,7 @@ export default class Label extends Component {
     corner: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['left', 'right'])]),
 
     /** Shorthand for LabelDetail. */
-    detail: customPropTypes.itemShorthand,
+    detail: PropTypes.node,
 
     /** Formats the label as a dot. */
     empty: customPropTypes.every([PropTypes.bool, customPropTypes.demand(['circular'])]),
@@ -92,8 +92,7 @@ export default class Label extends Component {
     icon: PropTypes.string,
 
     /** A label can be formatted to emphasize an image or prop can be used as shorthand for Image. */
-    image: PropTypes.oneOfType([PropTypes.bool, customPropTypes.itemShorthand]),
-
+    image: PropTypes.bool,
     /**
      * Called on click.
      *
@@ -117,11 +116,10 @@ export default class Label extends Component {
     ]),
 
     /** Shorthand for Icon to appear as the last child and trigger onRemove. */
-    removeIcon: customPropTypes.itemShorthand,
+    removeIcon: PropTypes.node,
 
     /** A label can appear as a ribbon attaching itself to an element. */
-    ribbon: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['right'])]),
-
+    ribbon: PropTypes.bool,
     /** A label can have different sizes. */
     size: PropTypes.oneOf([
       ...SUI.SIZES,

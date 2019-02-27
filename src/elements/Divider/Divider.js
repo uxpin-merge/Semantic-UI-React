@@ -63,7 +63,7 @@ Divider.propTypes = {
   clearing: PropTypes.bool,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Divider can be fitted without any space above or below it. */
   fitted: PropTypes.bool,

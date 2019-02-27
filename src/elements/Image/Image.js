@@ -142,10 +142,10 @@ Image.propTypes = {
   dimmer: PropTypes.node,
 
   /** An image can sit to the left or right of other content. */
-  floated: PropTypes.oneOf([...SUI.FLOATS, 'left', 'right']),
+  floated: PropTypes.oneOf(['left', 'right']),
 
   /** An image can take up the width of its container. */
-  fluid: customPropTypes.every([PropTypes.bool, customPropTypes.disallow(['size'])]),
+  fluid: PropTypes.bool,
 
   /** An image can be hidden. */
   hidden: PropTypes.bool,
@@ -157,7 +157,7 @@ Image.propTypes = {
   inline: PropTypes.bool,
 
   /** Shorthand for Label. */
-  label: customPropTypes.itemShorthand,
+  label: PropTypes.node,
 
   /** An image may appear rounded. */
   rounded: PropTypes.bool,

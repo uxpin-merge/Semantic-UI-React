@@ -37,7 +37,7 @@ PlaceholderHeader.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** A placeholder can contain an image. */
   image: PropTypes.bool,

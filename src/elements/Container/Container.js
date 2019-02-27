@@ -45,7 +45,7 @@ Container.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Container has no maximum width. */
   fluid: PropTypes.bool,
