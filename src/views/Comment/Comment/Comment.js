@@ -14,7 +14,7 @@ import CommentActions from '../CommentActions'
 import CommentAuthor from '../CommentAuthor'
 import CommentAvatar from '../CommentAvatar'
 import CommentContent from '../CommentContent'
-import CommentGroup from '../CommentGroup/CommentGroup'
+import CommentGroup from '../CommentGroup'
 import CommentMetadata from '../CommentMetadata'
 import CommentText from '../CommentText'
 

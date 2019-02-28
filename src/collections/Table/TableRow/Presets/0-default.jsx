@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
 import * as React from 'react'
 
-import CommentGroup from '../CommentGroup'
+import TableRow from '../TableRow'
 
-export default <CommentGroup />
+export default <TableRow />

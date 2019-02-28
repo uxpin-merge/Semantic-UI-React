@@ -3,12 +3,12 @@ import * as React from 'react'
 import { SemanticShorthandContent } from '../../../generic'
 import CommentAction from '../CommentAction'
 import CommentActions from '../CommentActions'
-import CommentAuthor from '../CommentAuthor'
+import CommentAuthor from '../CommentAuthor/CommentAuthor'
 import CommentAvatar from '../CommentAvatar/CommentAvatar'
-import CommentContent from '../CommentContent'
+import CommentContent from '../CommentContent/CommentContent'
 import CommentGroup from '../CommentGroup/CommentGroup'
 import CommentMetadata from '../CommentMetadata'
-import CommentText from '../CommentText'
+import CommentText from '../CommentText/CommentText'
 
 export interface CommentProps extends StrictCommentProps {
   [key: string]: any

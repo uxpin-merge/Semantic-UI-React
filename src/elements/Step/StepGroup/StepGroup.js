@@ -9,7 +9,6 @@ import {
   getElementType,
   getUnhandledProps,
   numberToWordMap,
-  SUI,
   useKeyOnly,
   useKeyOrValueAndKey,
   useValueAndKey,
@@ -101,7 +100,9 @@ StepGroup.propTypes = {
   ordered: PropTypes.bool,
 
   /** Steps can have different sizes. */
-  size: PropTypes.oneOf(_.without(SUI.SIZES, 'medium')),
+  size: PropTypes.oneOf(
+    _.without(['mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive'], 'medium'),
+  ),
 
   /** A step can stack vertically only on smaller screens. */
   stackable: PropTypes.oneOf(['tablet']),

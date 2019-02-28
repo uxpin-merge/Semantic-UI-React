@@ -6,6 +6,7 @@ import CommentContent from '../../CommentContent'
 import CommentAuthor from '../../CommentAuthor'
 // import CommentMetadata from '../CommentMetadata'
 import CommentText from '../../CommentText'
+// import CommentGroup from '../../CommentGroup/CommentGroup'
 // import Icon from '../../../elements/Icon/Icon'
 
 export default (
@@ -16,8 +17,10 @@ export default (
       uxpId='01'
     />
     <CommentContent uxpId='02'>
-      <CommentAuthor uxpId='03'>Stevie Feliciano</CommentAuthor>
-      <CommentText uxpId='44'>
+      <CommentAuthor as='a' uxpId='03'>
+        Stevie Feliciano
+      </CommentAuthor>
+      <CommentText uxpId='04'>
         Hey guys, I hope this example comment is helping you read this documentation.
       </CommentText>
     </CommentContent>

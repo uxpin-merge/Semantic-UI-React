@@ -49,22 +49,3 @@ export default (
     </Item>
   </ItemGroup>
 )
-
-/* (
-  <ItemGroup uxpId='0'>
-    <Item uxpId='1'>
-      <ItemImage size='tiny' src='https://reactsemantic-uicomimages/wireframeimagepng' uxpId='2' />
-      <ItemContent uxpId='3'>
-        <ItemHeader as='a' uxpId='4'>
-          Header
-        </ItemHeader>
-        <ItemMeta uxpId='5'>Description</ItemMeta>
-        <ItemDescription uxpId='6'>
-          <Image src='https://reactsemantic-uicomimages/wireframe/short-paragraphpng' uxpId='6' />
-        </ItemDescription>
-        <ItemExtra>Additional Details</ItemExtra>
-      </ItemContent>
-    </Item>
-  </ItemGroup>
-)
-*/

@@ -1,6 +1,5 @@
 /* eslint-disable react/jsx-filename-extension */
 import * as React from 'react'
+import ItemGroup from '../ItemGroup'
 
-import CommentGroup from '../CommentGroup'
-
-export default <CommentGroup />
+export default <ItemGroup />
