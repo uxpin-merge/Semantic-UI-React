@@ -49,16 +49,16 @@ class ListItem extends Component {
      * props to it. If you pass a content prop within that props object, it
      * will be treated as the sibling node to header/description.
      */
-    content: customPropTypes.itemShorthand,
+    content: PropTypes.node,
 
     /** Shorthand for ListDescription. */
-    description: customPropTypes.itemShorthand,
+    description: PropTypes.node,
 
     /** A list item can disabled. */
     disabled: PropTypes.bool,
 
     /** Shorthand for ListHeader. */
-    header: customPropTypes.itemShorthand,
+    header: PropTypes.node,
 
     /** Shorthand for ListIcon. */
     icon: customPropTypes.every([

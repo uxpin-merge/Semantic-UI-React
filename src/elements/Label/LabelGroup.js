@@ -7,7 +7,6 @@ import {
   customPropTypes,
   getElementType,
   getUnhandledProps,
-  SUI,
   useKeyOnly,
 } from '../../lib'
 
@@ -50,13 +49,27 @@ LabelGroup.propTypes = {
   className: PropTypes.string,
 
   /** Label group can share colors together. */
-  color: PropTypes.oneOf(SUI.COLORS),
+  color: PropTypes.oneOf([
+    'red',
+    'orange',
+    'yellow',
+    'olive',
+    'green',
+    'teal',
+    'blue',
+    'violet',
+    'purple',
+    'pink',
+    'brown',
+    'grey',
+    'black',
+  ]),
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Label group can share sizes together. */
-  size: PropTypes.oneOf(SUI.SIZES),
+  size: PropTypes.oneOf(['mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive']),
 
   /** Label group can share tag formatting. */
   tag: PropTypes.bool,

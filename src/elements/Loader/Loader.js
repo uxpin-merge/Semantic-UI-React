@@ -64,7 +64,7 @@ Loader.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** A loader can be disabled or hidden. */
   disabled: PropTypes.bool,

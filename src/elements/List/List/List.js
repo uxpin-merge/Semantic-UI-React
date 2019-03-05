@@ -8,7 +8,6 @@ import {
   customPropTypes,
   getElementType,
   getUnhandledProps,
-  SUI,
   useKeyOnly,
   useKeyOrValueAndKey,
   useValueAndKey,
@@ -45,13 +44,13 @@ class List extends Component {
     className: PropTypes.string,
 
     /** Shorthand for primary content. */
-    content: customPropTypes.contentShorthand,
+    content: PropTypes.node,
 
     /** A list can show divisions between content. */
     divided: PropTypes.bool,
 
     /** An list can be floated left or right. */
-    floated: PropTypes.oneOf(SUI.FLOATS),
+    floated: PropTypes.oneOf(['left', 'right']),
 
     /** A list can be formatted to have items appear horizontally. */
     horizontal: PropTypes.bool,
@@ -60,7 +59,7 @@ class List extends Component {
     inverted: PropTypes.bool,
 
     /** Shorthand array of props for ListItem. */
-    items: customPropTypes.collectionShorthand,
+    items: PropTypes.node,
 
     /** A list can be specially formatted for navigation links. */
     link: PropTypes.bool,
@@ -77,16 +76,16 @@ class List extends Component {
     ordered: PropTypes.bool,
 
     /** A list can relax its padding to provide more negative space. */
-    relaxed: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['very'])]),
+    relaxed: PropTypes.bool,
 
     /** A selection list formats list items as possible choices. */
     selection: PropTypes.bool,
 
     /** A list can vary in size. */
-    size: PropTypes.oneOf(SUI.SIZES),
+    size: PropTypes.oneOf(['mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive']),
 
     /** An element inside a list can be vertically aligned. */
-    verticalAlign: PropTypes.oneOf(SUI.VERTICAL_ALIGNMENTS),
+    verticalAlign: PropTypes.oneOf(['bottom', 'middle', 'top']),
   }
 
   static Content = ListContent

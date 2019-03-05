@@ -63,7 +63,7 @@ class Input extends Component {
     iconPosition: PropTypes.oneOf(['left']),
 
     /** Shorthand for creating the HTML Input. */
-    input: customPropTypes.itemShorthand,
+    input: PropTypes.node,
 
     /** Format to appear on dark backgrounds. */
     inverted: PropTypes.bool,
@@ -99,7 +99,7 @@ class Input extends Component {
     ]),
 
     /** An Input can receive focus. */
-    tabIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+    tabIndex: PropTypes.number,
 
     /** Transparent Input has no background. */
     transparent: PropTypes.bool,

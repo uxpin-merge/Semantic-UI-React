@@ -8,7 +8,6 @@ import {
   customPropTypes,
   getElementType,
   getUnhandledProps,
-  SUI,
   useKeyOnly,
   useKeyOrValueAndKey,
 } from '../../lib'
@@ -76,10 +75,12 @@ Rail.propTypes = {
   internal: PropTypes.bool,
 
   /** A rail can be presented on the left or right side of a container. */
-  position: PropTypes.oneOf(SUI.FLOATS).isRequired,
+  position: PropTypes.oneOf(['left', 'right']).isRequired,
 
   /** A rail can have different sizes. */
-  size: PropTypes.oneOf(_.without(SUI.SIZES, 'medium')),
+  size: PropTypes.oneOf(
+    _.without(['mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive'], 'medium'),
+  ),
 }
 
 export default Rail
