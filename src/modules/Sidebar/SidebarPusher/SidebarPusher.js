@@ -8,7 +8,7 @@ import {
   getElementType,
   getUnhandledProps,
   useKeyOnly,
-} from '../../lib'
+} from '../../../lib'
 
 /**
  * A pushable sub-component for Sidebar.
