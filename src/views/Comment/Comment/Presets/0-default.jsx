@@ -4,11 +4,8 @@ import Comment from '../Comment'
 import CommentAvatar from '../../CommentAvatar/CommentAvatar'
 import CommentContent from '../../CommentContent'
 import CommentAuthor from '../../CommentAuthor'
-// import CommentMetadata from '../CommentMetadata'
 import CommentText from '../../CommentText'
 import CommentGroup from '../../CommentGroup/CommentGroup'
-// import CommentGroup from '../../CommentGroup/CommentGroup'
-// import Icon from '../../../elements/Icon/Icon'
 
 export default (
   <CommentGroup uxpId='0'>

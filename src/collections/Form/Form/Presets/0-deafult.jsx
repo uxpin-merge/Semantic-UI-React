@@ -1,12 +1,9 @@
 /* eslint-disable react/jsx-filename-extension */
 import * as React from 'react'
 import Form from '../Form'
-// import FormGroup from '../../FormGroup/FormGroup'
-// import FormInput from '../../FormInput/FormInput'
 import FormField from '../../FormField/FormField'
 import FormCheckbox from '../../FormCheckbox/FormCheckbox'
 import FormButton from '../../FormButton/FormButton'
-// import FormTextArea from '../../FormTextArea/FormTextArea'
 
 export default (
   <Form uxpId='0'>

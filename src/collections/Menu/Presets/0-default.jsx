@@ -18,14 +18,3 @@ export default (
     </MenuItem>
   </Menu>
 )
-
-/*
-const items = [
-  { key: 'editorials', active: true, name: 'Editorials' },
-  { key: 'review', name: 'Reviews' },
-  { key: 'events', name: 'Upcoming Events' },
-]
-
-
-export default <Menu items={items} uxpId='0' />
-*/
