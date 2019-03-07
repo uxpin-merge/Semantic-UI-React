@@ -8,7 +8,6 @@ import {
   customPropTypes,
   getElementType,
   getUnhandledProps,
-  SUI,
   useKeyOnly,
   useKeyOrValueAndKey,
   useValueAndKey,

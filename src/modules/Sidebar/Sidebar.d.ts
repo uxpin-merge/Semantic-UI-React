@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { SemanticShorthandContent } from '../../generic'
 
-import SidebarPushable from './SidebarPushable'
-import SidebarPusher from './SidebarPusher'
+import SidebarPushable from './SidebarPushable/SidebarPushable'
+import SidebarPusher from './SidebarPusher/SidebarPusher'
 
 export interface SidebarProps extends StrictSidebarProps {
   [key: string]: any

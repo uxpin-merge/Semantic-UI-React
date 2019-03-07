@@ -38,31 +38,31 @@ export default class Card extends Component {
     color: PropTypes.oneOf(SUI.COLORS),
 
     /** Shorthand for primary content. */
-    content: customPropTypes.contentShorthand,
+    content: PropTypes.node,
 
     /** Shorthand for CardDescription. */
-    description: customPropTypes.itemShorthand,
+    description: PropTypes.node,
 
     /** Shorthand for primary content of CardContent. */
-    extra: customPropTypes.contentShorthand,
+    extra: PropTypes.node,
 
     /** A Card can be formatted to take up the width of its container. */
     fluid: PropTypes.bool,
 
     /** Shorthand for CardHeader. */
-    header: customPropTypes.itemShorthand,
+    header: PropTypes.node,
 
     /** Render as an `a` tag instead of a `div` and adds the href attribute. */
     href: PropTypes.string,
 
     /** A card can contain an Image component. */
-    image: customPropTypes.itemShorthand,
+    image: PropTypes.bool,
 
     /** A card can be formatted to link to other content. */
     link: PropTypes.bool,
 
     /** Shorthand for CardMeta. */
-    meta: customPropTypes.itemShorthand,
+    meta: PropTypes.node,
 
     /**
      * Called on click. When passed, the component renders as an `a`

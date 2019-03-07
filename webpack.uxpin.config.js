@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const path = require('path')
 
 module.exports = {
@@ -44,7 +43,7 @@ module.exports = {
           {
             loader: 'css-loader',
           },
-        ]
+        ],
       },
       {
         test: /\.(svg|gif|jpe?g|png)$/,

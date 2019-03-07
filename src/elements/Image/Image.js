@@ -133,19 +133,19 @@ Image.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** An image can show that it is disabled and cannot be selected. */
   disabled: PropTypes.bool,
 
   /** Shorthand for Dimmer. */
-  dimmer: customPropTypes.itemShorthand,
+  dimmer: PropTypes.node,
 
   /** An image can sit to the left or right of other content. */
-  floated: PropTypes.oneOf(SUI.FLOATS),
+  floated: PropTypes.oneOf(['left', 'right']),
 
   /** An image can take up the width of its container. */
-  fluid: customPropTypes.every([PropTypes.bool, customPropTypes.disallow(['size'])]),
+  fluid: PropTypes.bool,
 
   /** An image can be hidden. */
   hidden: PropTypes.bool,
@@ -157,14 +157,23 @@ Image.propTypes = {
   inline: PropTypes.bool,
 
   /** Shorthand for Label. */
-  label: customPropTypes.itemShorthand,
+  label: PropTypes.node,
 
   /** An image may appear rounded. */
   rounded: PropTypes.bool,
 
   /** An image may appear at different sizes. */
-  size: PropTypes.oneOf(SUI.SIZES),
-
+  size: PropTypes.oneOf([
+    ...SUI.SIZES,
+    'mini',
+    'tiny',
+    'small',
+    'medium',
+    'large',
+    'big',
+    'huge',
+    'massive',
+  ]),
   /** An image can specify that it needs an additional spacing to separate it from nearby content. */
   spaced: PropTypes.oneOfType([PropTypes.bool, PropTypes.oneOf(['left', 'right'])]),
 
@@ -172,7 +181,7 @@ Image.propTypes = {
   ui: PropTypes.bool,
 
   /** An image can specify its vertical alignment. */
-  verticalAlign: PropTypes.oneOf(SUI.VERTICAL_ALIGNMENTS),
+  verticalAlign: PropTypes.oneOf(['bottom', 'middle', 'top']),
 
   /** An image can render wrapped in a `div.ui.image` as alternative HTML markup. */
   wrapped: PropTypes.bool,

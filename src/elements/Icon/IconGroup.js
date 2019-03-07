@@ -32,7 +32,7 @@ IconGroup.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Size of the icon group. */
   size: PropTypes.oneOf(_.without(SUI.SIZES, 'medium')),

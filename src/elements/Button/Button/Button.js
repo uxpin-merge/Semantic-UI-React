@@ -84,13 +84,13 @@ class Button extends Component {
     compact: PropTypes.bool,
 
     /** Shorthand for primary content. */
-    content: customPropTypes.contentShorthand,
+    content: PropTypes.string,
 
     /** A button can show it is currently unable to be interacted with. */
     disabled: PropTypes.bool,
 
     /** A button can be aligned to the left or right of its container. */
-    floated: PropTypes.oneOf(SUI.FLOATS),
+    floated: PropTypes.oneOf(['left', 'right']),
 
     /** A button can take the width of its container. */
     fluid: PropTypes.bool,
@@ -102,7 +102,7 @@ class Button extends Component {
     inverted: PropTypes.bool,
 
     /** Add a Label by text, props object, or pass a <Label />. */
-    label: customPropTypes.some([PropTypes.string, PropTypes.object, PropTypes.element]),
+    label: PropTypes.string,
 
     /** A labeled button can format a Label or Icon to appear on the left or right. */
     labelPosition: PropTypes.oneOf(['right', 'left']),
@@ -133,11 +133,20 @@ class Button extends Component {
     secondary: PropTypes.bool,
 
     /** A button can have different sizes. */
-    size: PropTypes.oneOf(SUI.SIZES),
+    size: PropTypes.oneOf([
+      SUI.SIZES,
+      'mini',
+      'tiny',
+      'small',
+      'medium',
+      'large',
+      'big',
+      'huge',
+      'massive',
+    ]),
 
     /** A button can receive focus. */
-    tabIndex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-
+    tabIndex: PropTypes.number,
     /** A button can be formatted to toggle on and off. */
     toggle: PropTypes.bool,
   }
@@ -184,7 +193,7 @@ class Button extends Component {
     _.invoke(this.props, 'onClick', e, this.props)
   }
 
-  handleRef = (c) => (this.ref = c)
+  handleRef = c => (this.ref = c)
 
   hasIconClass = () => {
     const { labelPosition, children, content, icon } = this.props
@@ -298,6 +307,6 @@ class Button extends Component {
   }
 }
 
-Button.create = createShorthandFactory(Button, (value) => ({ content: value }))
+Button.create = createShorthandFactory(Button, value => ({ content: value }))
 
 export default Button

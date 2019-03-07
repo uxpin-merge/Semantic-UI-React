@@ -1,4 +1,4 @@
-import _ from 'lodash'
+// import _ from 'lodash'
 import cx from 'classnames'
 import PropTypes from 'prop-types'
 import React from 'react'
@@ -8,7 +8,6 @@ import {
   customPropTypes,
   getElementType,
   getUnhandledProps,
-  SUI,
   useValueAndKey,
   useTextAlignProp,
   useKeyOrValueAndKey,
@@ -131,7 +130,7 @@ Header.propTypes = {
   ]),
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Show that the header is inactive. */
   disabled: PropTypes.bool,
@@ -161,7 +160,7 @@ Header.propTypes = {
   sub: PropTypes.bool,
 
   /** Shorthand for Header.Subheader. */
-  subheader: customPropTypes.itemShorthand,
+  subheader: PropTypes.node,
 
   /** Align header content. */
   textAlign: PropTypes.oneOf(['left', 'center', 'right', 'justified']),

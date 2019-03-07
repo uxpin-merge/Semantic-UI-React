@@ -1,1 +1,1 @@
-export { default, StepProps, StrictStepProps } from './Step'
+export { default, StepProps, StrictStepProps } from './Step/Step'

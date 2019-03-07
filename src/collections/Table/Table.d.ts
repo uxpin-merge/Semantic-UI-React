@@ -6,12 +6,12 @@ import {
   SemanticVERTICALALIGNMENTS,
   SemanticWIDTHS,
 } from '../../generic'
-import TableBody from './TableBody'
-import TableCell from './TableCell'
-import TableFooter from './TableFooter'
-import TableHeader from './TableHeader'
-import TableHeaderCell from './TableHeaderCell'
-import { default as TableRow, TableRowProps } from './TableRow'
+import TableBody from './TableBody/TableBody'
+import TableCell from './TableCell/TableCell'
+import TableFooter from './TableFooter/TableFooter'
+import TableHeader from './TableHeader/TableHeader'
+import TableHeaderCell from './TableHeaderCell/TableHeaderCell'
+import { default as TableRow, TableRowProps } from './TableRow/TableRow'
 
 export interface TableProps extends StrictTableProps {
   [key: string]: any

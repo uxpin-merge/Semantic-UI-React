@@ -37,7 +37,7 @@ ItemMeta.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 }
 
 ItemMeta.create = createShorthandFactory(ItemMeta, content => ({ content }))

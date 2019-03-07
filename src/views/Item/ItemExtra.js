@@ -37,7 +37,7 @@ ItemExtra.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 }
 
 ItemExtra.create = createShorthandFactory(ItemExtra, content => ({ content }))

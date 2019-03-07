@@ -7,7 +7,6 @@ import {
   customPropTypes,
   getElementType,
   getUnhandledProps,
-  SUI,
   useKeyOnly,
   useTextAlignProp,
 } from '../../lib'
@@ -46,7 +45,7 @@ Container.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Container has no maximum width. */
   fluid: PropTypes.bool,
@@ -55,7 +54,7 @@ Container.propTypes = {
   text: PropTypes.bool,
 
   /** Align container text. */
-  textAlign: PropTypes.oneOf(SUI.TEXT_ALIGNMENTS),
+  textAlign: PropTypes.oneOf(['left', 'center', 'right', 'justified']),
 }
 
 export default Container

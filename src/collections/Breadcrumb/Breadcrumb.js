@@ -3,9 +3,9 @@ import _ from 'lodash'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { childrenUtils, customPropTypes, getUnhandledProps, getElementType, SUI } from '../../lib'
-import BreadcrumbDivider from './BreadcrumbDivider'
-import BreadcrumbSection from './BreadcrumbSection'
+import { childrenUtils, customPropTypes, getUnhandledProps, getElementType } from '../../lib'
+import BreadcrumbDivider from './BreadcrumbDivider/BreadcrumbDivider'
+import BreadcrumbSection from './BreadcrumbSection/BreadcrumbSection'
 
 /**
  * A breadcrumb is used to show hierarchy between content.
@@ -70,10 +70,10 @@ Breadcrumb.propTypes = {
   ]),
 
   /** Shorthand array of props for Breadcrumb.Section. */
-  sections: customPropTypes.collectionShorthand,
+  sections: PropTypes.node,
 
   /** Size of Breadcrumb. */
-  size: PropTypes.oneOf(_.without(SUI.SIZES, 'medium')),
+  size: PropTypes.oneOf(['mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive']),
 }
 
 Breadcrumb.Divider = BreadcrumbDivider
