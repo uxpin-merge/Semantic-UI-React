@@ -42,6 +42,7 @@ module.exports = {
           'src/elements/List/List/List.js',
           'src/elements/Loader/Loader.js',
           'src/elements/Placeholder/Placeholder/Placeholder.js',
+          'src/elements/Placeholder/PlaceholderLine/PlaceholderLine.js',
           'src/elements/Segment/Segment/Segment.js',
           'src/elements/Segment/SegmentGroup/SegmentGroup.js',
           'src/elements/Step/Step/Step.js',
@@ -54,6 +55,7 @@ module.exports = {
         include: [
           'src/views/Advertisement/Advertisement.js',
           'src/views/Card/Card.js',
+          'src/views/CardContent/CardContent.js',
           'src/views/Comment/CommentGroup/CommentGroup.js',
           'src/views/Comment/Comment/Comment.js',
           'src/views/Comment/CommentAuthor/CommentAuthor.js',

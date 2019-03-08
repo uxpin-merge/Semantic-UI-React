@@ -47,7 +47,7 @@ Placeholder.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** A fluid placeholder takes up the width of its container. */
   fluid: PropTypes.bool,
