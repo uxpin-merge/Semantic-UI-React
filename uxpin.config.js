@@ -59,7 +59,6 @@ module.exports = {
           'src/views/Comment/CommentAuthor/CommentAuthor.js',
           'src/views/Comment/CommentAvatar/CommentAvatar.js',
           'src/views/Comment/CommentContent/CommentContent.js',
-          // 'src/views/Comment/CommentGroup/CommentGroup.js',
           'src/views/Comment/CommentText/CommentText.js',
           'src/views/Item/Item.js',
           'src/views/Item/ItemContent/ItemContent.js',

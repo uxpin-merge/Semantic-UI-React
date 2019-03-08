@@ -11,16 +11,18 @@ import Image from '../../../elements/Image/Image'
 
 export default (
   <SidebarPushable as={Segment} uxpId='1'>
-    <Sidebar as={Menu} icon='labeled' inverted vertical visible width='thin' uxpId='1'>
-      <MenuItem as='a' uxpId='2'>
-        Home
-      </MenuItem>
-      <MenuItem as='a' uxpId='3'>
-        Games
-      </MenuItem>
-      <MenuItem as='a' uxpId='4'>
-        Channels
-      </MenuItem>
+    <Sidebar icon='labeled' inverted vertical visible width='thin' uxpId='1'>
+      <Menu uxpId='11'>
+        <MenuItem as='a' uxpId='2'>
+          Home
+        </MenuItem>
+        <MenuItem as='a' uxpId='3'>
+          Games
+        </MenuItem>
+        <MenuItem as='a' uxpId='4'>
+          Channels
+        </MenuItem>
+      </Menu>
     </Sidebar>
     <SidebarPusher uxpId='5'>
       <Segment basic uxpId='6'>

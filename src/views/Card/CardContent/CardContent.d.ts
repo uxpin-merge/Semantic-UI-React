@@ -1,9 +1,9 @@
 import * as React from 'react'
 
-import { SemanticShorthandContent, SemanticShorthandItem } from '../../generic'
-import { CardDescriptionProps } from './CardDescription'
-import { CardHeaderProps } from './CardHeader'
-import { CardMetaProps } from './CardMeta'
+import { SemanticShorthandContent, SemanticShorthandItem } from '../../../generic'
+import { CardDescriptionProps } from '../CardDescription'
+import { CardHeaderProps } from '../CardHeader'
+import { CardMetaProps } from '../CardMeta'
 
 export interface CardContentProps extends StrictCardContentProps {
   [key: string]: any
