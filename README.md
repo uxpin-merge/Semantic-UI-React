@@ -1,7 +1,7 @@
 # Semantic UI + UXPin Merge
 Integration of [Semantic UI](https://github.com/Semantic-Org/Semantic-UI-React) with UXPin Merge Technology. Check out [Merge Wiki](https://wikiuxpin.atlassian.net/wiki/spaces/MA) for detailed documentation
 
-![alt text](https://imgur.com/0VbJ6xd "Semantic UI + Merge")
+![alt text](https://github.com/rtaraszka/Semantic-UI-React/blob/master/blob/Semantic_UI.jpg  "Semantic UI + Merge")
 
 ## About Semantic UI and this repository.
 
@@ -29,7 +29,7 @@ Merge is currently only available for selected beta users.
 
 If you wish to push Semantic UI components to your UXPin account – check guide to integration with CI servers in our [WIKI](https://wikiuxpin.atlassian.net/wiki/spaces/MA/pages/665845792/CI+Servers) 
 
-## Examples
+## Example
 
 ![alt text](https://github.com/rtaraszka/Semantic-UI-React/blob/master/blob/Semantic_example.gif "Semantic UI in UXPin Merge")
 
