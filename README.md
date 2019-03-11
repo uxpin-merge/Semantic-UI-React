@@ -31,9 +31,8 @@ If you wish to push Semantic UI components to your UXPin account – check guide
 
 ## Examples
 
-![alt text](https://github.com/uxpin-merge/Semantic UI/blob/master/img/Semantic UI_1.gif "Semantic UI in UXPin Merge")
+![alt text](https://github.com/rtaraszka/Semantic-UI-React/blob/Semantic_example.gif "Semantic UI in UXPin Merge")
 
-![alt text](https://github.com/uxpin-merge/Semantic UI/blob/master/img/Semantic UI_calendar.gif "Semantic UI Calendar in Merge")
 
 ## Theming
 
