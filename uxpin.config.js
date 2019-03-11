@@ -68,6 +68,7 @@ module.exports = {
           'src/views/Item/ItemGroup/ItemGroup.js',
           'src/views/Item/ItemHeader/ItemHeader.js',
           'src/views/Item/ItemImage/ItemImage.js',
+          'src/views/Statistic/Statistic.js',
         ],
       },
       {
