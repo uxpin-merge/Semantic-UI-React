@@ -3,4 +3,4 @@ export {
   DropdownProps,
   StrictDropdownProps,
   DropdownOnSearchChangeData,
-} from './Dropdown'
+} from '../Dropdown/Dropdown/Dropdown'
