@@ -5,11 +5,8 @@ Integration of [Semantic UI](https://github.com/Semantic-Org/Semantic-UI-React) 
 
 ## About Semantic UI and this repository.
 
-[Semantic UI](https://semantic-ui.com) Semantic UI is a UI component framework for theming websites. Semantic UI enables developers to build websites with fast and concise HTML, along with a complete mobile responsive experience.
+[Semantic UI](https://semantic-ui.com) is a UI component framework for theming websites. Semantic UI enables developers to build websites with fast and concise HTML, along with a complete mobile responsive experience.
 
-This repository consists of Semantic UI code adjusted to the requirements of UXPin Merge. What have been changed?
-1. PropTypes – UXPin Merge doesn't have a full support for Typescript yet (coming soon!💫). To keep the functionality intact – I've added PropTypes to all the components. 
-2. Interactive, controlled, components – some of Semantic UI components require state control added to the implementation `JS` file. For the benefit of designers using this repository, I've added collection of fully interactive components.
 ## About UXPin Merge
 
 Merge is a revolutionary technology that lets users import (and keep in sync) coded React.js components from GIT repositories to UXPin editor. 
@@ -33,12 +30,6 @@ If you wish to push Semantic UI components to your UXPin account – check guide
 
 ![alt text](https://github.com/rtaraszka/Semantic-UI-React/blob/master/blob/Semantic_example.gif "Semantic UI in UXPin Merge")
 
-
-## Theming
-
-Theming is supported through `UXPinWrapper.js` component located in `./tools`. This wrapper uses `Semantic UI` component to pass theme to all components integrated with Merge.
-
-⚠️ `Semantic UI` component renders additional `div` wrapper. That causes problems with the size of bounding box in UXPin editor. The preferred way of UXPin Merge to work with theme providers is via [HOC](https://reactjs.org/docs/higher-order-components.html).
 
 ## Supported components
 
