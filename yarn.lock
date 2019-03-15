@@ -11697,7 +11697,7 @@ semantic-ui-css@^2.4.1:
 
 "semantic-ui-less@git+ssh://git@github.com:uxpin-merge/Semantic-UI-LESS.git":
   version "2.4.1"
-  resolved "git+ssh://git@github.com:uxpin-merge/Semantic-UI-LESS.git#65a4467fcddce5379114e849a8f7f4b52ec4312a"
+  resolved "git+ssh://git@github.com:uxpin-merge/Semantic-UI-LESS.git#33b128a9e031a40554add463782a6784dc2b343a"
   dependencies:
     jquery x.*
 
