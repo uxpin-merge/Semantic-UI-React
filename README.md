@@ -84,7 +84,7 @@ If you wish to push Semantic UI components to your UXPin account – check guide
 | Advertisement | ✅ Full Support |
 | Card | ✅ Full Support |
 | Comment | ✅ Full Support |
-| Feed | 🔻 Not Supported yet. |
+| Feed | ✅ Full Support |
 | Item | ✅ Full Support |
 | Statistic | ✅ Full Support |
 
