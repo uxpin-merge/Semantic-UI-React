@@ -38,7 +38,7 @@ If you wish to push Semantic UI components to your UXPin account – check guide
 | Button | ✅ Full Support |
 | Container | ✅ Full Support |
 | Divider | ✅ Full Support |
-| Flag | 🔻 Not Supported. Unknown issues. |
+| Flag | ✅ Full Support |
 | Header | ✅ Full Support |
 | Icon | ✅ Full Support |
 | Image | ✅ Full Support |
