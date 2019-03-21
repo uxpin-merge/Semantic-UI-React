@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import {
-  childrenUtils,
-  customPropTypes,
   getElementType,
   getUnhandledProps,
   useKeyOnly,
@@ -15,6 +13,7 @@ import {
  */
 function DropdownMenu(props) {
   const { children, className, content, direction, open, scrolling } = props
+
   const classes = cx(
     direction,
     useKeyOnly(open, 'visible'),
@@ -27,14 +26,14 @@ function DropdownMenu(props) {
 
   return (
     <ElementType {...rest} className={classes}>
-      {childrenUtils.isNil(children) ? content : children}
+      {children || content}
     </ElementType>
   )
 }
 
 DropdownMenu.propTypes = {
   /** An element type to render as (string or function). */
-  as: customPropTypes.as,
+  as: PropTypes.string,
 
   /** Primary content. */
   children: PropTypes.node,
@@ -43,7 +42,7 @@ DropdownMenu.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.string,
 
   /** A dropdown menu can open to the left or to the right. */
   direction: PropTypes.oneOf(['left', 'right']),

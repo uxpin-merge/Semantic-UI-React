@@ -11,7 +11,7 @@ import { customPropTypes, getElementType, getUnhandledProps } from '../../lib'
 class TextArea extends Component {
   static propTypes = {
     /** An element type to render as (string or function). */
-    as: customPropTypes.as,
+    as: PropTypes.string,
 
     /** Indicates whether height of the textarea fits the content or not. */
     autoHeight: PropTypes.bool,

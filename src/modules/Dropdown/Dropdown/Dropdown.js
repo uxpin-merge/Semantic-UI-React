@@ -20,11 +20,11 @@ import {
 } from '../../../lib'
 import Icon from '../../../elements/Icon'
 import Label from '../../../elements/Label'
-import DropdownDivider from '../DropdownDivider'
-import DropdownItem from '../DropdownItem'
-import DropdownHeader from '../DropdownHeader'
-import DropdownMenu from '../DropdownMenu'
-import DropdownSearchInput from '../DropdownSearchInput'
+import DropdownDivider from '../DropdownDivider/DropdownDivider'
+import DropdownItem from '../DropdownItem/DropdownItem'
+import DropdownHeader from '../DropdownHeader/DropdownHeader'
+import DropdownMenu from '../DropdownMenu/DropdownMenu'
+import DropdownSearchInput from '../DropdownSearchInput/DropdownSearchInput'
 
 const debug = makeDebugger('dropdown')
 
@@ -39,10 +39,10 @@ const getKeyOrValue = (key, value) => (_.isNil(key) ? value : key)
 export default class Dropdown extends Component {
   static propTypes = {
     /** An element type to render as (string or function). */
-    as: customPropTypes.as,
+    as: PropTypes.string,
 
     /** Label prefixed to an option added by a user. */
-    additionLabel: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
+    additionLabel: PropTypes.string,
 
     /** Position of the `Add: ...` option in the dropdown list ('top' or 'bottom'). */
     additionPosition: PropTypes.oneOf(['top', 'bottom']),
@@ -51,10 +51,7 @@ export default class Dropdown extends Component {
      * Allow user additions to the list of options (boolean).
      * Requires the use of `selection`, `options` and `search`.
      */
-    allowAdditions: customPropTypes.every([
-      customPropTypes.demand(['options', 'selection', 'search']),
-      PropTypes.bool,
-    ]),
+    allowAdditions: PropTypes.bool,
 
     /** A Dropdown can reduce its complexity. */
     basic: PropTypes.bool,
@@ -63,13 +60,7 @@ export default class Dropdown extends Component {
     button: PropTypes.bool,
 
     /** Primary content. */
-    children: customPropTypes.every([
-      customPropTypes.disallow(['options', 'selection']),
-      customPropTypes.givenProps(
-        { children: PropTypes.any.isRequired },
-        PropTypes.element.isRequired,
-      ),
-    ]),
+    children: PropTypes.node,
 
     /** Additional classes. */
     className: PropTypes.string,
@@ -100,10 +91,7 @@ export default class Dropdown extends Component {
     defaultSearchQuery: PropTypes.string,
 
     /** Currently selected label in multi-select. */
-    defaultSelectedLabel: customPropTypes.every([
-      customPropTypes.demand(['multiple']),
-      PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    ]),
+    defaultSelectedLabel: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 
     /** Initial value of upward. */
     defaultUpward: PropTypes.bool,
@@ -135,7 +123,7 @@ export default class Dropdown extends Component {
     header: PropTypes.node,
 
     /** Shorthand for Icon. */
-    icon: PropTypes.oneOfType([PropTypes.node, PropTypes.object]),
+    icon: PropTypes.string,
 
     /** A dropdown can be formatted to appear inline in other content. */
     inline: PropTypes.bool,
@@ -248,10 +236,7 @@ export default class Dropdown extends Component {
     openOnFocus: PropTypes.bool,
 
     /** Array of Dropdown.Item props e.g. `{ text: '', value: '' }` */
-    options: customPropTypes.every([
-      customPropTypes.disallow(['children']),
-      PropTypes.arrayOf(PropTypes.shape(DropdownItem.propTypes)),
-    ]),
+    options: PropTypes.arrayOf(PropTypes.shape(DropdownItem.propTypes)),
 
     /** Placeholder text. */
     placeholder: PropTypes.string,
@@ -309,17 +294,10 @@ export default class Dropdown extends Component {
     selectOnNavigation: PropTypes.bool,
 
     /** Currently selected label in multi-select. */
-    selectedLabel: customPropTypes.every([
-      customPropTypes.demand(['multiple']),
-      PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    ]),
+    selectedLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 
     /** A dropdown can be used to select between choices in a form. */
-    selection: customPropTypes.every([
-      customPropTypes.disallow(['children']),
-      customPropTypes.demand(['options']),
-      PropTypes.bool,
-    ]),
+    selection: PropTypes.bool,
 
     /** A simple dropdown can open without Javascript. */
     simple: PropTypes.bool,
@@ -331,10 +309,7 @@ export default class Dropdown extends Component {
     text: PropTypes.string,
 
     /** Custom element to trigger the menu to become visible. Takes place of 'text'. */
-    trigger: customPropTypes.every([
-      customPropTypes.disallow(['selection', 'text']),
-      PropTypes.node,
-    ]),
+    trigger: PropTypes.string,
 
     /** Current value or value array if multiple. Creates a controlled component. */
     value: PropTypes.oneOfType([

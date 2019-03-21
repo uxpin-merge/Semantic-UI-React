@@ -2,4 +2,6 @@
 import * as React from 'react'
 import FormField from '../FormField'
 
-export default <FormField label='User input' input='' />
+export default (
+  <FormField content='lorem ipsum' />
+)
