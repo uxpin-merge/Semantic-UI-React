@@ -38,9 +38,6 @@ Accordion.propTypes = {
 
   /** Adds some basic styling to accordion panels. */
   styled: PropTypes.bool,
-
-  /** Possibility to change the content of tabs */
-  panels: PropTypes.object,
 }
 
 Accordion.Accordion = AccordionAccordion

@@ -35,17 +35,9 @@ jobs:
           paths:
             - ~/.cache/yarn
       - run:
-          name: Lint TypeScript
-          command: yarn tsd:lint
-      - run:
-          name: Test TypeScript
-          command: yarn tsd:test
-      - run:
-          name: Lint JavaScript
-          command: yarn lint
-      - run:
-          name: Test JavaScript
-          command: yarn test
-      - run:
           name: Report coverage
           command: bash <(curl -s https://codecov.io/bash)
+      - run:
+          name: 'Push to UXPin'
+          command: ./node_modules/@uxpin/merge-cli/bin/uxpin-merge push --webpack-config ./webpack.uxpin.config.js --wrapper ./src/uxpinWrapper/UXPinWrapper.js  
+      

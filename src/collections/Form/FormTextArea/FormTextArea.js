@@ -1,8 +1,7 @@
 import React from 'react'
-
-import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
-import TextArea from '../../../addons/TextArea'
-import FormField from '../FormField/FormField'
+import PropTypes from 'prop-types';
+import { getUnhandledProps } from '../../../lib'
+import FormField from '../FormField/FormField';
 
 /**
  * Sugar for <Form.Field control={TextArea} />.
@@ -10,24 +9,19 @@ import FormField from '../FormField/FormField'
  * @see TextArea
  */
 function FormTextArea(props) {
-  const { control } = props
   const rest = getUnhandledProps(FormTextArea, props)
-  const ElementType = getElementType(FormTextArea, props)
 
-  return <ElementType {...rest} control={control} />
+  console.log(props.control);
+
+  return <FormField {...rest} control={props.control} />
 }
 
 FormTextArea.propTypes = {
-  /** An element type to render as (string or function). */
-  as: customPropTypes.as,
-
-  /** A FormField control prop. */
-  control: FormField.propTypes.control,
+  control: PropTypes.string
 }
 
 FormTextArea.defaultProps = {
-  as: FormField,
-  control: TextArea,
+  control: '<TextArea />'
 }
 
 export default FormTextArea

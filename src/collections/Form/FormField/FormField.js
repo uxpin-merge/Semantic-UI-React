@@ -4,12 +4,9 @@ import PropTypes from 'prop-types'
 import React, { createElement } from 'react'
 
 import {
-  childrenUtils,
   createHTMLLabel,
-  customPropTypes,
   getElementType,
   getUnhandledProps,
-  SUI,
   useKeyOnly,
   useWidthProp,
 } from '../../../lib'
@@ -54,22 +51,26 @@ function FormField(props) {
   const rest = getUnhandledProps(FormField, props)
   const ElementType = getElementType(FormField, props)
 
+  console.log({ classes });
+
   // ----------------------------------------
   // No Control
   // ----------------------------------------
+
+  // console.log(control.type, Checkbox, control.type === Checkbox);
 
   if (_.isNil(control)) {
     if (_.isNil(label)) {
       return (
         <ElementType {...rest} className={classes}>
-          {childrenUtils.isNil(children) ? content : children}
+          {content || children}
         </ElementType>
       )
     }
 
     return (
       <ElementType {...rest} className={classes}>
-        {createHTMLLabel(label, { autoGenerateKey: false })}
+        <label>{label}</label>
       </ElementType>
     )
   }
@@ -77,7 +78,7 @@ function FormField(props) {
   // ----------------------------------------
   // Checkbox/Radio Control
   // ----------------------------------------
-  const controlProps = { ...rest, content, children, disabled, required, type }
+  const controlProps = { ...rest, content, disabled, required, type }
 
   // wrap HTML checkboxes/radios in the label
   if (control === 'input' && (type === 'checkbox' || type === 'radio')) {
@@ -91,10 +92,10 @@ function FormField(props) {
   }
 
   // pass label prop to controls that support it
-  if (control === Checkbox || control === Radio) {
+  if (control.type === Checkbox || control.type === Radio) {
     return (
       <ElementType className={classes}>
-        {createElement(control, { ...controlProps, label })}
+        {createElement(control.type, { ...controlProps, label })}
       </ElementType>
     )
   }
@@ -109,16 +110,15 @@ function FormField(props) {
         defaultProps: { htmlFor: _.get(controlProps, 'id') },
         autoGenerateKey: false,
       })}
-      {createElement(control, controlProps)}
+      {createElement(control.type, controlProps)}
     </ElementType>
   )
 }
 
 FormField.propTypes = {
   /** An element type to render as (string or function). */
-  as: customPropTypes.as,
+  as: PropTypes.string,
 
-  /** Primary content. */
   children: PropTypes.node,
 
   /** Additional classes. */
@@ -132,10 +132,7 @@ FormField.propTypes = {
    * Extra FormField props are passed to the control component.
    * Mutually exclusive with children.
    */
-  control: customPropTypes.some([
-    PropTypes.func,
-    PropTypes.oneOf(['button', 'input', 'select', 'textarea']),
-  ]),
+  control: PropTypes.string,
 
   /** Individual fields may be disabled. */
   disabled: PropTypes.bool,
@@ -150,21 +147,54 @@ FormField.propTypes = {
   // Do not disallow children with `label` shorthand
   // The `control` might accept a `label` prop and `children`
   /** Mutually exclusive with children. */
-  label: PropTypes.node,
+  label: PropTypes.string,
 
   /** A field can show that input is mandatory. */
   required: PropTypes.bool,
 
   /** Passed to the control component (i.e. <input type='password' />) */
-  type: customPropTypes.every([
-    customPropTypes.demand(['control']),
-    // don't strictly validate HTML types
-    // a control might be passed that uses a `type` prop with unknown values
-    // let the control validate if for us
-  ]),
+  type: PropTypes.string,
 
   /** A field can specify its width in grid columns */
-  width: PropTypes.oneOf(SUI.WIDTHS),
+  width: PropTypes.oneOf([
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
+    '11',
+    '12',
+    '13',
+    '14',
+    '15',
+    '16',
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine',
+    'ten',
+    'eleven',
+    'twelve',
+    'thirteen',
+    'fourteen',
+    'fifteen',
+    'sixteen',
+  ]),
+}
+
+FormField.defaultProps = {
+  as: 'div',
+  width: 'six',
 }
 
 export default FormField

@@ -3,16 +3,8 @@ import _ from 'lodash'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import { childrenUtils, customPropTypes, getElementType, getUnhandledProps, SUI } from '../../lib'
-import FeedContent from './FeedContent'
-import FeedDate from './FeedDate'
-import FeedEvent from './FeedEvent'
-import FeedExtra from './FeedExtra'
-import FeedLabel from './FeedLabel'
-import FeedLike from './FeedLike'
-import FeedMeta from './FeedMeta'
-import FeedSummary from './FeedSummary'
-import FeedUser from './FeedUser'
+import { getElementType, getUnhandledProps, SUI } from '../../lib'
+import FeedEvent from './FeedEvent/FeedEvent'
 
 /**
  * A feed presents user activity chronologically.
@@ -24,7 +16,7 @@ function Feed(props) {
   const rest = getUnhandledProps(Feed, props)
   const ElementType = getElementType(Feed, props)
 
-  if (!childrenUtils.isNil(children)) {
+  if (children) {
     return (
       <ElementType {...rest} className={classes}>
         {children}
@@ -48,7 +40,7 @@ function Feed(props) {
 
 Feed.propTypes = {
   /** An element type to render as (string or function). */
-  as: customPropTypes.as,
+  as: PropTypes.string,
 
   /** Primary content. */
   children: PropTypes.node,
@@ -57,20 +49,14 @@ Feed.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand array of props for FeedEvent. */
-  events: customPropTypes.collectionShorthand,
+  events: PropTypes.array,
 
   /** A feed can have different sizes. */
   size: PropTypes.oneOf(_.without(SUI.SIZES, 'mini', 'tiny', 'medium', 'big', 'huge', 'massive')),
 }
 
-Feed.Content = FeedContent
-Feed.Date = FeedDate
-Feed.Event = FeedEvent
-Feed.Extra = FeedExtra
-Feed.Label = FeedLabel
-Feed.Like = FeedLike
-Feed.Meta = FeedMeta
-Feed.Summary = FeedSummary
-Feed.User = FeedUser
+Feed.defaultProps = {
+  events: [],
+}
 
 export default Feed

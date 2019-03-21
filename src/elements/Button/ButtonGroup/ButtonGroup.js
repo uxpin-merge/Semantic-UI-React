@@ -98,7 +98,7 @@ ButtonGroup.propTypes = {
   basic: PropTypes.bool,
 
   /** Array of shorthand Button values. */
-  buttons: customPropTypes.collectionShorthand,
+  buttons: PropTypes.node,
 
   /** Primary content. */
   children: PropTypes.node,
@@ -113,7 +113,7 @@ ButtonGroup.propTypes = {
   compact: PropTypes.bool,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.node,
 
   /** Groups can be aligned to the left or right of its container. */
   floated: PropTypes.oneOf(SUI.FLOATS),

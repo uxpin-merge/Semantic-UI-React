@@ -4,7 +4,7 @@ import { StrictDropdownProps } from '../../modules/Dropdown'
 import DropdownDivider from '../../modules/Dropdown/DropdownDivider'
 import DropdownHeader from '../../modules/Dropdown/DropdownHeader'
 import DropdownItem, { DropdownItemProps } from '../../modules/Dropdown/DropdownItem'
-import DropdownMenu from '../../modules/Dropdown/DropdownMenu'
+import DropdownMenu from '../../modules/Dropdown/DropdownMenu/DropdownMenu'
 
 export interface SelectProps extends StrictSelectProps {
   [key: string]: any

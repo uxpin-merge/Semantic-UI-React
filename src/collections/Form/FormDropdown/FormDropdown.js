@@ -1,7 +1,6 @@
 import React from 'react'
-
-import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
-import Dropdown from '../../../modules/Dropdown'
+import PropTypes from 'prop-types'
+import { getUnhandledProps } from '../../../lib'
 import FormField from '../FormField/FormField'
 
 /**
@@ -10,24 +9,21 @@ import FormField from '../FormField/FormField'
  * @see Form
  */
 function FormDropdown(props) {
-  const { control } = props
+  const { control, options } = props
   const rest = getUnhandledProps(FormDropdown, props)
-  const ElementType = getElementType(FormDropdown, props)
 
-  return <ElementType {...rest} control={control} />
+  return <FormField {...rest} control={control} options={options} />
 }
 
 FormDropdown.propTypes = {
-  /** An element type to render as (string or function). */
-  as: customPropTypes.as,
-
   /** A FormField control prop. */
-  control: FormField.propTypes.control,
+  control: PropTypes.string,
+  options: PropTypes.array,
 }
 
 FormDropdown.defaultProps = {
-  as: FormField,
-  control: Dropdown,
+  control: '<Dropdown />',
+  options: [],
 }
 
 export default FormDropdown
