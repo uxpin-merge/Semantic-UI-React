@@ -2,4 +2,4 @@
 import * as React from 'react'
 import FormTextArea from '../../FormTextArea/FormTextArea'
 
-export default <FormTextArea />
+export default <FormTextArea control='<TextArea />' />

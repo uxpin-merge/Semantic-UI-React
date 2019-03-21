@@ -3,10 +3,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 
 import {
-  customPropTypes,
   getElementType,
   getUnhandledProps,
-  SUI,
   useKeyOnly,
   useWidthProp,
 } from '../../../lib'
@@ -38,7 +36,7 @@ function FormGroup(props) {
 
 FormGroup.propTypes = {
   /** An element type to render as (string or function). */
-  as: customPropTypes.as,
+  as: PropTypes.string,
 
   /** Primary content. */
   children: PropTypes.node,
@@ -47,16 +45,54 @@ FormGroup.propTypes = {
   className: PropTypes.string,
 
   /** Fields can show related choices. */
-  grouped: customPropTypes.every([customPropTypes.disallow(['inline']), PropTypes.bool]),
+  grouped: PropTypes.bool,
 
   /** Multiple fields may be inline in a row. */
-  inline: customPropTypes.every([customPropTypes.disallow(['grouped']), PropTypes.bool]),
+  inline: PropTypes.bool,
 
   /** A form group can prevent itself from stacking on mobile. */
   unstackable: PropTypes.bool,
 
   /** Fields Groups can specify their width in grid columns or automatically divide fields to be equal width. */
-  widths: PropTypes.oneOf([...SUI.WIDTHS, 'equal']),
+  widths: PropTypes.oneOf([
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
+    '11',
+    '12',
+    '13',
+    '14',
+    '15',
+    '16',
+    'one',
+    'two',
+    'three',
+    'four',
+    'five',
+    'six',
+    'seven',
+    'eight',
+    'nine',
+    'ten',
+    'eleven',
+    'twelve',
+    'thirteen',
+    'fourteen',
+    'fifteen',
+    'sixteen',
+    'equal',
+  ]),
+}
+
+FormGroup.defaultProps = {
+  as: 'div',
 }
 
 export default FormGroup

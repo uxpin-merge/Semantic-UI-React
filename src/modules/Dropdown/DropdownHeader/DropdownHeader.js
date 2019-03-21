@@ -5,11 +5,10 @@ import React from 'react'
 import {
   childrenUtils,
   createShorthandFactory,
-  customPropTypes,
   getElementType,
   getUnhandledProps,
-} from '../../lib'
-import Icon from '../../elements/Icon'
+} from '../../../lib'
+import Icon from '../../../elements/Icon'
 
 /**
  * A dropdown menu can contain a header.
@@ -21,7 +20,7 @@ function DropdownHeader(props) {
   const rest = getUnhandledProps(DropdownHeader, props)
   const ElementType = getElementType(DropdownHeader, props)
 
-  if (!childrenUtils.isNil(children)) {
+  if (children) {
     return (
       <ElementType {...rest} className={classes}>
         {children}
@@ -39,7 +38,7 @@ function DropdownHeader(props) {
 
 DropdownHeader.propTypes = {
   /** An element type to render as (string or function) */
-  as: customPropTypes.as,
+  as: PropTypes.string,
 
   /** Primary content. */
   children: PropTypes.node,
@@ -48,10 +47,14 @@ DropdownHeader.propTypes = {
   className: PropTypes.string,
 
   /** Shorthand for primary content. */
-  content: customPropTypes.contentShorthand,
+  content: PropTypes.string,
 
   /** Shorthand for Icon. */
-  icon: customPropTypes.itemShorthand,
+  icon: PropTypes.string,
+}
+
+DropdownHeader.defaultProps = {
+  as: 'div',
 }
 
 DropdownHeader.create = createShorthandFactory(DropdownHeader, content => ({ content }))

@@ -1,7 +1,6 @@
 import React from 'react'
-
-import { customPropTypes, getElementType, getUnhandledProps } from '../../../lib'
-import Input from '../../../elements/Input'
+import PropTypes from 'prop-types'
+import { getUnhandledProps } from '../../../lib'
 import FormField from '../FormField/FormField'
 
 /**
@@ -12,22 +11,17 @@ import FormField from '../FormField/FormField'
 function FormInput(props) {
   const { control } = props
   const rest = getUnhandledProps(FormInput, props)
-  const ElementType = getElementType(FormInput, props)
 
-  return <ElementType {...rest} control={control} />
+  return <FormField {...rest} control={control} />
 }
 
 FormInput.propTypes = {
-  /** An element type to render as (string or function). */
-  as: customPropTypes.as,
-
   /** A FormField control prop. */
-  control: FormField.propTypes.control,
+  control: PropTypes.string,
 }
 
 FormInput.defaultProps = {
-  as: FormField,
-  control: Input,
+  control: '<Input />',
 }
 
 export default FormInput

@@ -7,15 +7,14 @@ import {
   childrenUtils,
   createShorthand,
   createShorthandFactory,
-  customPropTypes,
   getElementType,
   getUnhandledProps,
   useKeyOnly,
-} from '../../lib'
-import Flag from '../../elements/Flag'
-import Icon from '../../elements/Icon'
-import Image from '../../elements/Image'
-import Label from '../../elements/Label'
+} from '../../../lib'
+import Flag from '../../../elements/Flag'
+import Icon from '../../../elements/Icon'
+import Image from '../../../elements/Image'
+import Label from '../../../elements/Label'
 
 /**
  * An item sub-component for Dropdown component.
@@ -23,7 +22,7 @@ import Label from '../../elements/Label'
 class DropdownItem extends Component {
   static propTypes = {
     /** An element type to render as (string or function). */
-    as: customPropTypes.as,
+    as: PropTypes.string,
 
     /** Style as the currently chosen item. */
     active: PropTypes.bool,
@@ -35,25 +34,25 @@ class DropdownItem extends Component {
     className: PropTypes.string,
 
     /** Shorthand for primary content. */
-    content: customPropTypes.contentShorthand,
+    content: PropTypes.string,
 
     /** Additional text with less emphasis. */
-    description: customPropTypes.itemShorthand,
+    description: PropTypes.string,
 
     /** A dropdown item can be disabled. */
     disabled: PropTypes.bool,
 
     /** Shorthand for Flag. */
-    flag: customPropTypes.itemShorthand,
+    flag: PropTypes.string,
 
     /** Shorthand for Icon. */
-    icon: customPropTypes.itemShorthand,
+    icon: PropTypes.string,
 
     /** Shorthand for Image. */
-    image: customPropTypes.itemShorthand,
+    image: PropTypes.string,
 
     /** Shorthand for Label. */
-    label: customPropTypes.itemShorthand,
+    label: PropTypes.string,
 
     /**
      * Called on click.
@@ -70,10 +69,14 @@ class DropdownItem extends Component {
     selected: PropTypes.bool,
 
     /** Display text. */
-    text: customPropTypes.contentShorthand,
+    text: PropTypes.string,
 
     /** Stored value. */
     value: PropTypes.oneOfType([PropTypes.bool, PropTypes.number, PropTypes.string]),
+  }
+
+  static defaultProps = {
+    as: 'div'
   }
 
   handleClick = (e) => {
@@ -118,7 +121,7 @@ class DropdownItem extends Component {
       'aria-selected': selected,
     }
 
-    if (!childrenUtils.isNil(children)) {
+    if (children) {
       return (
         <ElementType {...rest} {...ariaOptions} className={classes} onClick={this.handleClick}>
           {children}
@@ -137,7 +140,7 @@ class DropdownItem extends Component {
     const textElement = createShorthand(
       'span',
       val => ({ children: val }),
-      childrenUtils.isNil(content) ? text : content,
+      !content ? text : content,
       { defaultProps: { className: 'text' }, autoGenerateKey: false },
     )
 

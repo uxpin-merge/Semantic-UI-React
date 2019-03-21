@@ -3,15 +3,15 @@ import _ from 'lodash'
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 
-import { createShorthandFactory, customPropTypes, getUnhandledProps, handleRef } from '../../lib'
+import { createShorthandFactory, getUnhandledProps, handleRef } from '../../../lib'
 
 /**
  * A search item sub-component for Dropdown component.
  */
 class DropdownSearchInput extends Component {
   static propTypes = {
-    /** An element type to render as (string or function). */
-    as: customPropTypes.as,
+    /** An element type to render as (string). */
+    as: PropTypes.string,
 
     /** An input can have the auto complete. */
     autoComplete: PropTypes.string,
