@@ -39,5 +39,5 @@ jobs:
           command: bash <(curl -s https://codecov.io/bash)
       - run:
           name: 'Push to UXPin'
-          command: ./node_modules/.bin/uxpin-merge push --webpack-config ./webpack.uxpin.config.js --wrapper ./src/uxpinWrapper/UXPinWrapper.js  
+          command: ./node_modules/@uxpin/merge-cli/bin/uxpin-merge push --webpack-config ./webpack.uxpin.config.js --wrapper ./src/uxpinWrapper/UXPinWrapper.js  
       
